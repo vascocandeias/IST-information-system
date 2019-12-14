@@ -1,1 +1,1 @@
-# IST-information-system
+# IST Information System
