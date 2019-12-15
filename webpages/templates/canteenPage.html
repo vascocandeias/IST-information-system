@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- day; meal; -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,18 +8,23 @@
 <h1>Canteen Menu</h1>
 
 <p> Day: {{  day  }} </p>
-
 <ul>
-{% for item in meal %}
-    <li> {{  item.type  }}:</li>
-    <ul>
+    {% for item in meal %}
+        <li> {{ item.type }}: </li>
         {% for i in item.info %}
-        <li> Menu: {{ i.menu }} </li>
-        <li> Name:  {{  i.name  }}</li>
-        <li> Type: {{ i.type  }}</li>
-    </ul>
-{% endfor %}
+        <ul>
+            <li> Menu: {{ i.menu }} </li>
+            <li> Name: {{ i.name }} </li>
+            <li> Type: {{ i.type }} </li>
+        </ul>
+        <br>
+        {% endfor %}
+    {% endfor %}
 </ul>
+
+<form>
+<input type="button" value="Return" onclick="history.back()">
+</form>
 
 </body>
 </html>

@@ -5,8 +5,9 @@ from datetime import *
 import json
 import requests
 
-canteenURL="http://127.0.0.1:5002"
-roomURL="http://127.0.0.1:5001"
+#canteenURL="http://127.0.0.1:5002"
+#roomURL="http://127.0.0.1:5001"
+APIURL="http://192.168.1.81:5004"
 
 app = Flask(__name__)
 
@@ -20,13 +21,17 @@ def secretariat_list_page():
 
 @app.route('/canteen', methods=['POST'])
 def get_canteen_list():
-    s = str(request.form)
+    #s = str(request.form)
     dt = datetime.strptime(request.form["day"], '%Y-%m-%d')
+    print(dt.day)
     try:
-        url_send = canteenURL + '/' + dt.year + '/' + dt.month + '/' + dt.day
+        url_send = APIURL + '/canteen/' + str(dt.year) + '/' + str(dt.month) + '/' + str(dt.day)
+        print(url_send)
         data = requests.get(url=url_send).json()
-        return render_template("canteenPage.html", date=request.form["day"], meal=data)
-    except:
+        print(data)
+        return render_template("canteenPage.html", day=request.form["day"] , meal=data)
+    except Exception as e:
+        print(e)
         return render_template("errorPage.html", name="date")
 
 @app.route('/rooms', methods=['POST'])
