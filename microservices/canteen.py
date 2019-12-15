@@ -4,6 +4,7 @@ from flask import request
 import requests
 import json
 
+PORT = 5002
 URL = "https://fenix.tecnico.ulisboa.pt/api/fenix/v1/canteen"
 
 #TODO: Meter retornos 404 bem
@@ -28,4 +29,4 @@ def get_canteen(year, month, day):
         return None
 
 if __name__ == '__main__': 
-    app.run(port=5002)
+    app.run(port=PORT)
