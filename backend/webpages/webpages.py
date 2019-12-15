@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask 
 from flask import render_template
 from flask import request
 from datetime import datetime
@@ -11,7 +11,7 @@ import requests
 APIURL="http://192.168.1.81:5004"
 
 app = Flask(__name__)
-logging.basicConfig(filename='../log.txt', level=logging.DEBUG, format='%(asctime)s %(levelname)s webpages: %(message)s')
+logging.basicConfig(filename='../log.txt', level=logging.DEBUG, format='%(asctime)s %(levelname)s user-webpages: %(message)s')
 
 @app.route('/')
 def hello_world():
@@ -19,39 +19,44 @@ def hello_world():
 
 @app.route('/secretariats')
 def secretariat_list_page():
-    return "sorry"
+    try:
+        send_url = APIURL + '/secretariats'
+        data = requests.get(url=send_url).json()
+        return render_template("secretariatsPage.html", items=data)
+    except Exception as e:
+        return render_template("errorPage.html", error=str(e))
+
+@app.route('/secretariats/<id>')
+def secretariat(id):
+    try:
+        send_url = APIURL + '/secretariats/' + id
+        data = requests.get(url=send_url).json()
+        return render_template("secretariatPage.html", info=data)
+    except Exception as e:
+        return render_template("errorPage.html", error=str(e))
 
 @app.route('/canteen', methods=['POST'])
 def get_canteen_list():
-    #s = str(request.form)
     dt = datetime.strptime(request.form["day"], '%Y-%m-%d')
-    print(dt.day)
     try:
         url_send = APIURL + '/canteen/' + str(dt.year) + '/' + str(dt.month) + '/' + str(dt.day)
-        print(url_send)
         data = requests.get(url=url_send).json()
-        print(data)
         return render_template("canteenPage.html", day=request.form["day"] , meal=data)
     except Exception as e:
-        print(e)
-        return render_template("errorPage.html", name="date")
+        return render_template("errorPage.html", error=str(e))
 
 @app.route('/rooms', methods=['POST'])
 def rooms_page():
-    # s = str(request.form)
     value=int(request.form["id"])
-    #print(value)
     if value <= 0:
         return render_template("errorPage.html", name="id < 0")
     else:
         try:
             url_send = APIURL + '/rooms/' + str(value)
-            # print(url_send)
             d = requests.get(url=url_send).json()
-            print(d)
             return render_template("roomPage.html", id=request.form["id"], data=d)
         except Exception as e:
-            return render_template("errorPage.html", name=str(e))
+            return render_template("errorPage.html", error=str(e))
 
 """
 @app.route('/addValue', methods=['POST'])
@@ -79,5 +84,5 @@ def get_Value2():
 """
 
 if __name__ == '__main__':
-    app.run(port=5000)
+    app.run(port=5005)
 
