@@ -11,6 +11,7 @@ import pickle
 app = Flask(__name__)
 filename = 'secretariat.pickle'
 PORT = 5000
+logging.basicConfig(filename='../backend/log.txt', level=logging.DEBUG, format='%(asctime)s %(levelname)s secretariat: %(message)s')
 
 @app.route('/', methods=['GET','POST'])
 def home_page():

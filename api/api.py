@@ -7,6 +7,7 @@ import json
 
 PORT = 5004
 app = Flask(__name__)
+logging.basicConfig(filename='../backend/log.txt', level=logging.DEBUG, format='%(asctime)s %(levelname)s api: %(message)s')
 services = {
     'canteen': 'http://127.0.0.1:5002',
     'rooms': 'http://127.0.0.1:5001',
@@ -15,6 +16,7 @@ services = {
 
 @app.route('/<service>/<path:subpath>')
 def api(service, subpath):
+    print(request)
     try:
         url = services[service] + '/' + subpath
     except:

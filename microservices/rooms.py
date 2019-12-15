@@ -10,6 +10,7 @@ URL = "https://fenix.tecnico.ulisboa.pt/api/fenix/v1/spaces/"
 #TODO: Meter retornos 404 bem
 
 app = Flask(__name__)
+logging.basicConfig(filename='../backend/log.txt', level=logging.DEBUG, format='%(asctime)s %(levelname)s rooms: %(message)s')
 
 @app.route('/')
 def home_page():
@@ -23,6 +24,7 @@ def get_room(id):
     try:
         if data["description"] == "id not found" or data["type"] != "ROOM":
             return None
+        data["building"] = "Torre Norte"
         return data
     except:
         return None
