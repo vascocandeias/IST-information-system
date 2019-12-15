@@ -2,7 +2,6 @@ from flask import Flask, jsonify
 from flask import render_template
 from flask import request
 import logging
-from logging import FileHandler
 import requests
 import json
 

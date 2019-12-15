@@ -2,6 +2,7 @@ from flask import Flask
 from flask import render_template
 from flask import request, redirect
 from flask import jsonify
+import logging
 import requests
 import json
 
