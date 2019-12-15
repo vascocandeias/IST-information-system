@@ -12,7 +12,6 @@ URL = "https://fenix.tecnico.ulisboa.pt/api/fenix/v1/canteen"
 
 app = Flask(__name__)
 logging.basicConfig(filename='../backend/log.txt', level=logging.DEBUG, format='%(asctime)s %(levelname)s canteen: %(message)s')
-
     
 @app.route('/')
 def home_page():

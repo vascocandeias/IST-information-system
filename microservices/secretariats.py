@@ -12,12 +12,12 @@ import pickle
 app = Flask(__name__)
 filename = 'secretariat.pickle'
 PORT = 5000
-logging.basicConfig(filename='../backend/log.txt', level=logging.DEBUG, format='%(asctime)s %(levelname)s secretariat: %(message)s')
+logging.basicConfig(filename='../backend/log.txt', level=logging.DEBUG, format='%(asctime)s %(levelname)s secretariats: %(message)s')
 
 @app.route('/', methods=['GET','POST'])
 def home_page():
     global cur_id
-    global secretariat
+    global secretariats
 
     if request.method == 'GET':
         return json.dumps(secretariats) 
@@ -25,10 +25,12 @@ def home_page():
         secretariat = {}
         secretariat['id'] = cur_id
         cur_id += 1
-        secretariat['location'] = request.args.get('location')
-        secretariat['name'] = request.args.get('name')
-        secretariat['description'] = request.args.get('description')
-        secretariat['hours'] = request.args.get('hours')
+        data = request.values
+        # breakpoint()
+        secretariat['location'] = data.get('location')
+        secretariat['name'] = data.get('name')
+        secretariat['description'] = data.get('description')
+        secretariat['hours'] = data.get('hours')
         secretariats.append(secretariat)
         try:
             f = open(filename, "wb")
@@ -55,8 +57,9 @@ def get_sectreteriat(id):
         return secretariat
     
     if request.method == 'PUT':
-        for x in request.args:
-            aux = {x: request.args[x]}
+        data = request.get_json()
+        for x in data:
+            aux = {x: data[x]}
             secretariat.update(aux)
         try:
             f = open(filename, "wb")
