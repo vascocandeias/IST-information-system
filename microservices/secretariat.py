@@ -50,7 +50,7 @@ def get_sectreteriat(id):
     secretariat = secretariat[0]
     
     if request.method == 'GET':
-        return jsonify(secretariat)
+        return secretariat
     
     if request.method == 'PUT':
         for x in request.args:
@@ -64,7 +64,7 @@ def get_sectreteriat(id):
             print(e)
             print("unable to pickle. quitting")
             exit()
-        return jsonify(secretariat)
+        return secretariat
     
     if request.method == 'DELETE':
         secretariats.remove(secretariat)
@@ -76,7 +76,7 @@ def get_sectreteriat(id):
             print(e)
             print("unable to pickle. quitting")
             exit()
-        return jsonify({'status': 'ok'})
+        return {'status': 'ok'}
 
 if __name__ == '__main__': 
     global cur_id

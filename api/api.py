@@ -8,18 +8,23 @@ import json
 PORT = 5004
 app = Flask(__name__)
 services = {
-    'canteen': '127.0.0.1:5002',
-    'rooms': '127.0.0.1:5001',
-    'secretariat': '127.0.0.1:5000'
+    'canteen': 'http://127.0.0.1:5002',
+    'rooms': 'http://127.0.0.1:5001',
+    'secretariat': 'http://127.0.0.1:5000'
 }
 
 @app.route('/<service>/<path:subpath>')
 def api(service, subpath):
-    print(subpath)
-    print(services[service])
-    aux = redirect(services[service] + '/' + subpath)
-    print(aux)
-    return aux
+    url = services[service] + '/' + subpath
+    if request.method == 'GET':
+        aux = requests.get(url).json()
+    elif request.method == 'POST':
+        aux = requests.post(url).json()
+    elif request.method == 'PUT':
+        aux = requests.put(url).json()
+    elif request.method == 'DELETE':
+        aux = requests.delete(url).json()
+    return json.dumps(aux)
 
 if __name__ == '__main__': 
-    app.run(port=PORT)
+    app.run(host='0.0.0.0', port=PORT)

@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, jsonify
 from flask import render_template
 from flask import request
 import requests
@@ -24,9 +24,9 @@ def get_canteen(year, month, day):
         for x in data:
             if x["day"] == date:
                 return json.dumps(x["meal"])
-        return None
+        return {}
     except:
-        return None
+        return {}
 
 if __name__ == '__main__': 
     app.run(port=PORT)
