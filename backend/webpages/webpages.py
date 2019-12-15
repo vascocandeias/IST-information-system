@@ -2,6 +2,7 @@ from flask import Flask
 from flask import render_template
 from flask import request
 from datetime import *
+import logging
 import json
 import requests
 
@@ -10,6 +11,7 @@ import requests
 APIURL="http://192.168.1.81:5004"
 
 app = Flask(__name__)
+logging.basicConfig(filename='../log.txt', level=logging.DEBUG, format='%(asctime)s %(levelname)s webpages: %(message)s')
 
 @app.route('/')
 def hello_world():

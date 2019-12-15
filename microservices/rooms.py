@@ -11,7 +11,7 @@ URL = "https://fenix.tecnico.ulisboa.pt/api/fenix/v1/spaces/"
 #TODO: Meter retornos 404 bem
 
 app = Flask(__name__)
-logging.basicConfig(filename='../backend/log.txt', level=logging.DEBUG, format='%(asctime)s %(levelname)s rooms: %(message)s')
+logging.basicConfig(filename='../log.txt', level=logging.DEBUG, format='%(asctime)s %(levelname)s rooms: %(message)s')
 
 @app.route('/')
 def home_page():
