@@ -88,7 +88,7 @@ if __name__ == '__main__':
         secretariats = pickle.load(f)
         f.close()
         # print(secretariats)
-    except FleNotFoundError:
+    except FileNotFoundError:
         print("no pickle found. starting fresh")
         secretariats = []
     except Exception as e:
