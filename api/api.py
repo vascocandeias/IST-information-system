@@ -15,7 +15,10 @@ services = {
 
 @app.route('/<service>/<path:subpath>')
 def api(service, subpath):
-    url = services[service] + '/' + subpath
+    try:
+        url = services[service] + '/' + subpath
+    except:
+        return {}
     if request.method == 'GET':
         aux = requests.get(url).json()
     elif request.method == 'POST':

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- id, data-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Room Page</title>
+</head>
+<body>
+<h1>Rooms</h1>
+
+<p>ID: {{  id  }}</p>
+<p>Name: {{  data.name  }}</p>
+<p>Campus: {{  data.topLevelSpace.name  }}</p>
+<p>Building: {{ data.description }}</p> <!-- O que é que ponho aqui?-->
+<p>Events:</p>
+<ul>
+{% for item in data.events %}
+    <li> Start: {{ item.start }} </li>
+    <li> End: {{  item.end }} </li>
+    <li> {{  item.type  }} - {{  item.acronym  }} </li>
+{% endfor %}
+</ul>
+
+<!-- Number of values: {{ counter }}
+
+{% for item in keys %}
+    <ul>
+        <li>get Counter of {{item}}
+            <ul>
+                <li><a href="/getValue?key={{item}}">/getValue?key={{item}}</a> </li>
+                <li><a href="/value/{{item}}">/value/{{item}}</a> </li>
+            </ul>
+        </li>
+    </ul>
+{% endfor %} -->
+
+</body>
+</html>

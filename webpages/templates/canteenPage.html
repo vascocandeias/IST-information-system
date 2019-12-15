@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- day; meal; -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canteen Page</title>
+</head>
+<body>
+<h1>Canteen Menu</h1>
+
+<p> Day: {{  day  }} </p>
+
+<ul>
+{% for item in meal %}
+    <li> {{  item.type  }}:</li>
+    <ul>
+        {% for i in item.info %}
+        <li> Menu: {{ i.menu }} </li>
+        <li> Name:  {{  i.name  }}</li>
+        <li> Type: {{ i.type  }}</li>
+    </ul>
+{% endfor %}
+</ul>
+
+</body>
+</html>
