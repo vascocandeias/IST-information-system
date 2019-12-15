@@ -36,20 +36,20 @@ def get_canteen_list():
 
 @app.route('/rooms', methods=['POST'])
 def rooms_page():
-    s = str(request.form)
+    # s = str(request.form)
     value=int(request.form["id"])
     #print(value)
     if value <= 0:
         return render_template("errorPage.html", name="id < 0")
     else:
         try:
-            url_send = roomURL + '/' + str(value)
-            print(url_send)
-            d = requests.gt(url=url_send).json()
+            url_send = APIURL + '/rooms/' + str(value)
+            # print(url_send)
+            d = requests.get(url=url_send).json()
             print(d)
             return render_template("roomPage.html", id=request.form["id"], data=d)
-        except:
-            return render_template("errorPage.html", name="id not valid")
+        except Exception as e:
+            return render_template("errorPage.html", name=str(e))
 
 """
 @app.route('/addValue', methods=['POST'])

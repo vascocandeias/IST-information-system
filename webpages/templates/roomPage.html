@@ -8,31 +8,36 @@
 <body>
 <h1>Rooms</h1>
 
-<p>ID: {{  id  }}</p>
-<p>Name: {{  data.name  }}</p>
-<p>Campus: {{  data.topLevelSpace.name  }}</p>
-<p>Building: {{ data.description }}</p> <!-- O que é que ponho aqui?-->
+<p>ID: {{ id }}</p>
+<p>Name and Location: {{  data.name  }}, {{ data.building}}, {{ data.topLevelSpace.name }}</p> 
+
+<form>
+<input type="button" value="Return" onclick="history.back()">
+</form>
+
 <p>Events:</p>
 <ul>
 {% for item in data.events %}
-    <li> Start: {{ item.start }} </li>
-    <li> End: {{  item.end }} </li>
-    <li> {{  item.type  }} - {{  item.acronym  }} </li>
+    <li> Day: {{ item.day }}</li>
+    <li> From {{ item.start }} to {{ item.end }} </li>
+    {% if item.type == "GENERIC" %}
+    <li> {{ item.title }}</li>
+    {% elif item.type == "LESSON" %}
+    <li> {{ item.course.acronym }}  - {{ item.info }} - {{ item.course.name }}</li>
+    {% elif item.type == "TEST" %}
+    <li> {{ item.description }}:
+        <ul>
+        {% for i in item.courses %}
+            <li>{{ i.acronym }}, {{ i.name }}</li>
+        {% endfor %}
+        </ul>
+    </li>
+    {% else %}
+    <li>Type: {{ item.type }}</li>
+    {% endif %}
+    <br>
 {% endfor %}
 </ul>
-
-<!-- Number of values: {{ counter }}
-
-{% for item in keys %}
-    <ul>
-        <li>get Counter of {{item}}
-            <ul>
-                <li><a href="/getValue?key={{item}}">/getValue?key={{item}}</a> </li>
-                <li><a href="/value/{{item}}">/value/{{item}}</a> </li>
-            </ul>
-        </li>
-    </ul>
-{% endfor %} -->
 
 </body>
 </html>
