@@ -14,11 +14,22 @@ class Not200(Exception):
 APIURL="http://192.168.1.81:5004"
 
 app = Flask(__name__)
-# logging.basicConfig(filename='../log.txt', level=logging.DEBUG, format='%(asctime)s %(levelname)s admin-webpages: %(message)s')
+logging.basicConfig(filename='../log.txt', level=logging.DEBUG, format='%(asctime)s %(levelname)s admin-webpages: %(message)s')
 
 @app.route('/')
 def hello_world():
     return render_template("mainPage.html")
+
+@app.route('/logging')
+def show_logs():
+    l = []
+    try:
+        f = open("../log.txt", "r")
+        l = f.readlines()
+        f.close()
+        return render_template("logsPage.html", lines=l)
+    except Exception as e:
+        return render_template("errorPage.html", error=str(e))
 
 @app.route('/secretariats', methods=["GET", "POST"])
 def secretariat_list_page():
