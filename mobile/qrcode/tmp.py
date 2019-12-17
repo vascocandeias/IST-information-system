@@ -6,7 +6,7 @@ import logging
 import requests
 import json
 
-PORT = 5004
+PORT = 5009
 app = Flask(__name__)
 
 @app.route('/camera')
@@ -16,12 +16,8 @@ def camera():
 @app.route('/')
 def api():
     # breakpoint()
-    print("hey")
-    response = jsonify({'var':'value'})
-    response.headers.add('Access-Control-Allow-Origin', '*')
-    response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-    response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
+    response = jsonify({'var':'value2'})
     return response
 
 if __name__ == '__main__': 
-    app.run(host='0.0.0.0', port=PORT)
+    app.run(port=PORT)

@@ -392,3 +392,41 @@ requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=5
 2019-12-16 20:44:00,520 INFO secretariats: 127.0.0.1 - - [16/Dec/2019 20:44:00] "GET / HTTP/1.1" 200 -
 2019-12-16 20:44:00,524 DEBUG api: http://127.0.0.1:5005 "GET / HTTP/1.1" 200 1489
 2019-12-16 20:44:00,528 INFO api: 192.168.1.78 - - [16/Dec/2019 20:44:00] "GET /secretariats HTTP/1.1" 200 -
+2019-12-17 09:58:46,725 INFO user-webpages:  * Running on http://127.0.0.1:5005/ (Press CTRL+C to quit)
+2019-12-17 09:59:02,901 INFO user-webpages: 127.0.0.1 - - [17/Dec/2019 09:59:02] "GET / HTTP/1.1" 200 -
+2019-12-17 09:59:03,956 INFO user-webpages: 127.0.0.1 - - [17/Dec/2019 09:59:03] "GET /favicon.ico HTTP/1.1" 404 -
+2019-12-17 09:59:13,366 DEBUG user-webpages: Starting new HTTP connection (1): 127.0.0.1:5004
+2019-12-17 09:59:15,429 INFO user-webpages: 127.0.0.1 - - [17/Dec/2019 09:59:15] "GET /secretariats HTTP/1.1" 200 -
+2019-12-17 10:02:22,608 INFO admin-webpages:  * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)
+2019-12-17 10:02:28,747 INFO admin-webpages: 127.0.0.1 - - [17/Dec/2019 10:02:28] "GET / HTTP/1.1" 200 -
+2019-12-17 10:02:29,441 INFO admin-webpages: 127.0.0.1 - - [17/Dec/2019 10:02:29] "GET /favicon.ico HTTP/1.1" 404 -
+2019-12-17 10:02:36,385 DEBUG admin-webpages: Starting new HTTP connection (1): 192.168.1.81:5004
+2019-12-17 10:02:57,410 INFO admin-webpages: 127.0.0.1 - - [17/Dec/2019 10:02:57] "GET /secretariats HTTP/1.1" 200 -
+2019-12-17 10:03:04,993 INFO admin-webpages: 127.0.0.1 - - [17/Dec/2019 10:03:04] "GET / HTTP/1.1" 200 -
+2019-12-17 10:03:09,062 INFO admin-webpages:  * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)
+2019-12-17 10:03:10,831 INFO admin-webpages: 127.0.0.1 - - [17/Dec/2019 10:03:10] "GET / HTTP/1.1" 200 -
+2019-12-17 10:03:14,394 INFO admin-webpages: 127.0.0.1 - - [17/Dec/2019 10:03:14] "GET / HTTP/1.1" 200 -
+2019-12-17 10:03:17,157 INFO admin-webpages: 127.0.0.1 - - [17/Dec/2019 10:03:17] "GET /logging HTTP/1.1" 200 -
+2019-12-17 10:03:32,742 DEBUG admin-webpages: Starting new HTTP connection (1): 127.0.0.1:5004
+2019-12-17 10:03:34,766 INFO admin-webpages: 127.0.0.1 - - [17/Dec/2019 10:03:34] "GET /secretariats HTTP/1.1" 200 -
+2019-12-17 10:37:48,444 INFO api:  * Running on http://0.0.0.0:5004/ (Press CTRL+C to quit)
+2019-12-17 10:38:11,016 INFO secretariats:  * Running on http://127.0.0.1:5005/ (Press CTRL+C to quit)
+2019-12-17 12:27:52,760 INFO rooms:  * Running on http://127.0.0.1:5001/ (Press CTRL+C to quit)
+2019-12-17 12:27:56,746 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-17 12:27:56,927 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131363667 HTTP/1.1" 200 None
+2019-12-17 12:27:56,930 INFO rooms: 127.0.0.1 - - [17/Dec/2019 12:27:56] "GET /2448131363667 HTTP/1.1" 200 -
+2019-12-17 12:29:10,540 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-17 12:29:10,708 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131363667 HTTP/1.1" 200 None
+2019-12-17 12:29:10,711 INFO rooms: 127.0.0.1 - - [17/Dec/2019 12:29:10] "GET /2448131363667 HTTP/1.1" 200 -
+2019-12-17 12:29:14,943 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-17 12:29:15,110 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131363667 HTTP/1.1" 200 None
+2019-12-17 12:29:15,112 INFO rooms: 127.0.0.1 - - [17/Dec/2019 12:29:15] "GET /2448131363667 HTTP/1.1" 200 -
+2019-12-17 12:29:41,728 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-17 12:29:41,857 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131363667 HTTP/1.1" 200 None
+2019-12-17 12:29:41,859 INFO rooms: 127.0.0.1 - - [17/Dec/2019 12:29:41] "GET /2448131363667 HTTP/1.1" 200 -
+2019-12-17 12:32:34,128 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-17 12:32:34,296 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131363667 HTTP/1.1" 200 None
+2019-12-17 12:32:34,298 INFO rooms: 127.0.0.1 - - [17/Dec/2019 12:32:34] "GET /2448131363667 HTTP/1.1" 200 -
+2019-12-17 12:50:50,915 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-17 12:50:51,029 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131363667 HTTP/1.1" 200 None
+2019-12-17 12:50:51,042 INFO rooms: 127.0.0.1 - - [17/Dec/2019 12:50:51] "GET /2448131363667 HTTP/1.1" 200 -

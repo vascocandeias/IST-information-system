@@ -8,7 +8,7 @@ import requests
 
 #canteenURL="http://127.0.0.1:5002"
 #roomURL="http://127.0.0.1:5001"
-APIURL="http://192.168.1.81:5004"
+APIURL="http://127.0.0.1:5004"
 
 app = Flask(__name__)
 logging.basicConfig(filename='../log.txt', level=logging.DEBUG, format='%(asctime)s %(levelname)s user-webpages: %(message)s')

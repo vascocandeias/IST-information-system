@@ -10,9 +10,9 @@ import pickle
 #TODO: Meter retornos 404 bem
 
 app = Flask(__name__)
-filename = 'secretariat.pickle'
+filename = 'secretariats.pickle'
 PORT = 5005
-logging.basicConfig(filename='../backend/log.txt', level=logging.DEBUG, format='%(asctime)s %(levelname)s secretariats: %(message)s')
+# logging.basicConfig(filename='../backend/logtxt', level=logging.DEBUG, format='%(asctime)s %(levelname)s secretariats: %(message)s')
 # logging.basicConfig(filename='/backend/log.txt', level=logging.DEBUG, format='%(asctime)s %(levelname)s secretariats: %(message)s')
 
 @app.route('/', methods=['GET','POST'])
@@ -32,6 +32,7 @@ def home_page():
         secretariat['name'] = data.get('name')
         secretariat['description'] = data.get('description')
         secretariat['hours'] = data.get('hours')
+        secretariat['type'] = "SECRETARIAT"
         secretariats.append(secretariat)
         try:
             f = open(filename, "wb")
