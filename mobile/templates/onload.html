@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- <script src="{{url_for('static', filename='script.js')}}"></script> -->
+        <script type="text/javascript">
+            jQuery(document).ready(function(){
+                console.log("Ready");
+                jQuery("button").click(function(){
+                    document.getElementById("result").innerHTML = document.getElementById("username").innerHTML;
+                    jQuery.getJSON("http://127.0.0.1:5000/users",
+                        data={'username': document.getElementById(username).innerHTML}, function(response){
+                           // window.location.href = response.redirect;
+                        // document.getElementById("result").innerHTML = data.name;
+                    });
+                });
+            });
+        </script>
+    </head>
+<body>
+    
+    <!-- <button onclick="window.location='/private'">LogIn</button> -->
+    <!-- <form action="javascript:;" onsubmit="onButtonPress(this);">
+        username: <input type="text" name="username"><br>
+        <input type="submit", value="Search For">
+    </form> -->
+
+    <br>username: <input type="text" name="username" id="username"><br>
+    <button id="btn" >Search For</button>
+    <div id="result">Result</div>
+    
+    
+</body>
+</html>

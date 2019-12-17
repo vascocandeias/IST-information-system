@@ -1,0 +1,16 @@
+<!doctype html>
+<title>{% block title %}{% endblock %} - Flask</title>
+    <script type="text/javascript">
+         function check(myform) {
+            if (myform.term.value=="") {
+                alert("Please enter a search term!");
+                  return false;
+            } else {
+                return true;
+              }
+          }
+  </script>
+<body>
+  username - {{ username }}
+<a href="/private">Log In</a>
+</body>

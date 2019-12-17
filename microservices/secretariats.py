@@ -11,8 +11,9 @@ import pickle
 
 app = Flask(__name__)
 filename = 'secretariat.pickle'
-PORT = 5000
+PORT = 5005
 logging.basicConfig(filename='../backend/log.txt', level=logging.DEBUG, format='%(asctime)s %(levelname)s secretariats: %(message)s')
+# logging.basicConfig(filename='/backend/log.txt', level=logging.DEBUG, format='%(asctime)s %(levelname)s secretariats: %(message)s')
 
 @app.route('/', methods=['GET','POST'])
 def home_page():
@@ -57,7 +58,7 @@ def get_sectreteriat(id):
         return secretariat
     
     if request.method == 'PUT':
-        data = request.get_json()
+        data = request.values
         for x in data:
             aux = {x: data[x]}
             secretariat.update(aux)
