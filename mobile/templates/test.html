@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function(){
+            jQuery("button").click(function(){
+                jQuery.getJSON("http://127.0.0.1:5000/private", function(response){
+                    window.location.href = response.redirect;
+                    // document.getElementById("result").innerHTML = data.name;
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    
+    <button>Button</button>
+    <div id="result"></div>
+    
+    
+</body>
+</html>
+
