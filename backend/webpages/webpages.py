@@ -6,8 +6,6 @@ import logging
 import json
 import requests
 
-#canteenURL="http://127.0.0.1:5002"
-#roomURL="http://127.0.0.1:5001"
 APIURL="http://127.0.0.1:5004"
 
 app = Flask(__name__)

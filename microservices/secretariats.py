@@ -12,6 +12,7 @@ import pickle
 app = Flask(__name__)
 filename = 'secretariats.pickle'
 PORT = 5005
+cur_id
 # logging.basicConfig(filename='../backend/logtxt', level=logging.DEBUG, format='%(asctime)s %(levelname)s secretariats: %(message)s')
 # logging.basicConfig(filename='/backend/log.txt', level=logging.DEBUG, format='%(asctime)s %(levelname)s secretariats: %(message)s')
 
