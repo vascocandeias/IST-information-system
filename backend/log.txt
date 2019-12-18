@@ -766,3 +766,17 @@ TypeError: The view function did not return a valid response. The function eithe
 2019-12-18 10:25:30,901 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
 2019-12-18 10:25:31,010 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
 2019-12-18 10:25:31,035 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:31,391 DEBUG user-webpages: http://127.0.0.1:5004 "GET /rooms/2448131363667 HTTP/1.1" 500 290
+2019-12-18 10:25:31,392 INFO user-webpages: 127.0.0.1 - - [18/Dec/2019 10:25:31] "POST /rooms HTTP/1.1" 200 -
+2019-12-18 10:25:40,003 DEBUG user-webpages: Starting new HTTP connection (1): 127.0.0.1:5004
+2019-12-18 10:26:10,721 DEBUG user-webpages: http://127.0.0.1:5004 "GET /rooms/2448131363667 HTTP/1.1" 500 290
+2019-12-18 10:26:10,723 INFO user-webpages: 127.0.0.1 - - [18/Dec/2019 10:26:10] "POST /rooms HTTP/1.1" 200 -
+2019-12-18 10:26:15,023 DEBUG user-webpages: Starting new HTTP connection (1): 127.0.0.1:5004
+2019-12-18 10:26:21,199 DEBUG user-webpages: http://127.0.0.1:5004 "GET /rooms/2448131363667 HTTP/1.1" 500 290
+2019-12-18 10:26:21,200 INFO user-webpages: 127.0.0.1 - - [18/Dec/2019 10:26:21] "POST /rooms HTTP/1.1" 200 -
+2019-12-18 10:26:42,828 DEBUG user-webpages: Starting new HTTP connection (1): 127.0.0.1:5004
+2019-12-18 10:26:55,214 DEBUG user-webpages: http://127.0.0.1:5004 "GET /rooms/2448131363667 HTTP/1.1" 500 290
+2019-12-18 10:26:55,216 INFO user-webpages: 127.0.0.1 - - [18/Dec/2019 10:26:55] "POST /rooms HTTP/1.1" 200 -
+2019-12-18 10:27:46,798 DEBUG user-webpages: Starting new HTTP connection (1): 127.0.0.1:5004
+2019-12-18 10:27:47,645 DEBUG user-webpages: http://127.0.0.1:5004 "GET /rooms/2448131363667 HTTP/1.1" 200 10473
+2019-12-18 10:27:47,793 INFO user-webpages: 127.0.0.1 - - [18/Dec/2019 10:27:47] "POST /rooms HTTP/1.1" 200 -

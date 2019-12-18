@@ -2,19 +2,31 @@ from flask import Flask
 from flask import render_template
 from flask import request, redirect
 from flask import jsonify
-import logging
+from datetime import datetime
 import requests
 import json
 import pickle
+
+URL_LOG = "http://127.0.0.1:5006"
 
 #TODO: Meter retornos 404 bem
 
 app = Flask(__name__)
 filename = 'secretariats.pickle'
 PORT = 5005
-cur_id
-# logging.basicConfig(filename='../backend/logtxt', level=logging.DEBUG, format='%(asctime)s %(levelname)s secretariats: %(message)s')
-# logging.basicConfig(filename='/backend/log.txt', level=logging.DEBUG, format='%(asctime)s %(levelname)s secretariats: %(message)s')
+# cur_id
+
+@app.before_request
+def before():
+    data = {
+        "ip": request.environ.get('REMOTE_ADDR', 'unknown'),
+        "time": str(datetime.now()),
+        "service": 'secretariats',
+        "method": request.method,
+        "endpoint": request.path,
+        "payload": str(request.data),
+        }
+    requests.post(URL_LOG, data = data)
 
 @app.route('/', methods=['GET','POST'])
 def home_page():
@@ -89,6 +101,7 @@ def get_sectreteriat(id):
 if __name__ == '__main__': 
     global cur_id
     cur_id = -1
+    
     try:
         f = open(filename, "rb")
         secretariats = pickle.load(f)

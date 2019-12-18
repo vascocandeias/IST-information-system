@@ -153,6 +153,7 @@ def show_logs():
     except Exception as e:
         return render_template("errorPage.html", error=str(e))
 
+
 @app.route('/secretariats', methods=["GET", "POST"])
 @login_required
 def secretariat_list_page():
