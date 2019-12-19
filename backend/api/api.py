@@ -6,23 +6,28 @@ import json
 
 PORT = 5000
 
+################# API variables
+
 services = {
     'canteen': 'http://127.0.0.1:5002',
     'rooms': 'http://127.0.0.1:5001',
     'secretariats': 'http://127.0.0.1:5005'
 }
 
-redirect_uri = "http://127.0.0.1:5000/userAuth" # this is the address of the page on this app
+################# Authentication variables
 
+redirect_uri = "http://127.0.0.1:5000/userAuth" # this is the address of the page on this app 
 client_id= "570015174623374" # copy value from the app registration
-clientSecret = "FlO1nGCmmV+KtaTFRMyoJtNMMZZpZSD4zme+cNHfq4mDQEXFbJqSzJBhgtEdZ2tbYK01JhyIKyzfatUXkd02PA==" # copy value from the app registration
-
+clientSecret = "FlO1nGCmmV+KtaTFRMyoJtNMMZZpZSD4zme+cNHfq4mDQEXFbJqSzJBhgtEdZ2tbYK01JhyIKyzfatUXkd02PA==" # copy value from the app registration 
 fenixLoginpage= "https://fenix.tecnico.ulisboa.pt/oauth/userdialog?client_id=%s&redirect_uri=%s"
 fenixacesstokenpage = 'https://fenix.tecnico.ulisboa.pt/oauth/access_token'
-
 dict = {}
 secretsDict = {}
+
+################# Global variables
 app = Flask(__name__)
+
+########################################### Mobile app ###########################################
 
 @app.route('/users')
 def get_users():
@@ -62,7 +67,13 @@ def userAuthenticated():
     code = request.args['code']
 
     # we now retrieve a fenix access token
-    payload = {'client_id': client_id, 'client_secret': clientSecret, 'redirect_uri' : redirect_uri, 'code' : code, 'grant_type': 'authorization_code'}
+    payload = {
+        'client_id': client_id,
+        'client_secret': clientSecret,
+        'redirect_uri' : redirect_uri,
+        'code' : code,
+        'grant_type': 'authorization_code'
+    }
     response = requests.post(fenixacesstokenpage, params = payload)
     if(response.status_code == 200):
         #if we receive the token
@@ -118,7 +129,9 @@ def getSecret():
         return resp.json()
         
 
-@app.route('/APi/<service>', defaults={'subpath': ''}, methods=['GET', 'POST'])
+############################################### API ###############################################
+
+@app.route('/API/<service>', defaults={'subpath': ''}, methods=['GET', 'POST'])
 @app.route('/API/<service>/<path:subpath>', methods=['GET', 'POST', 'PUT', 'DELETE'])
 def api(service, subpath):
     # breakpoint()
@@ -136,5 +149,8 @@ def api(service, subpath):
         aux = requests.delete(url).json()
     return json.dumps(aux)
     
+
+
+############################################ Main app ############################################
 if __name__ == '__main__': 
     app.run(port=PORT)
