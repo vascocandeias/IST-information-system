@@ -1,8 +1,5 @@
-from flask import Flask
-from flask import redirect
-from flask import render_template
-from flask import request
-from flask import jsonify
+from flask import Flask, redirect, render_template, request, jsonify, url_for
+import secrets
 import requests
 
 #to get the following value go to:
@@ -23,40 +20,43 @@ code = False
 dict = {}
 app = Flask(__name__)
 
-@app.route('/')
-def hello_world():
-    return render_template("appPage.html", username=loginName)
+# @app.route('/')
+# def hello_world():
+#     return render_template("appPage.html", username=loginName)
 
 @app.route('/users')
 def get_users():
     return dict
 
-@app.route('/private')
-def private_page():
+@app.route('/', methods = ["GET", "POST"])
+def private_page(secret = ""):
     #this page can only be accessed by a authenticated username
+    userToken = dict.get(request.values.get("secret"))
 
-    if loginName == False:
+    if userToken == None:
         #if the user is not authenticated
-
         redPage = fenixLoginpage % (client_id, redirect_uri)
-        print("Running login")
         # the app redirecte the user to the FENIX login page
         return redirect(redPage)
+
+    #if the user ir authenticated
+    # print(userToken)
+
+    #we can use the userToken to access the fenix
+
+    # Meter aqui a nossa app: página para aceder ao qrcode ou personal info
+
+    return render_template("privPage.html", token = userToken)
+
+    params = {'access_token': userToken}
+    resp = requests.get("https://fenix.tecnico.ulisboa.pt/api/fenix/v1/person", params = params)
+
+    if (resp.status_code == 200):
+        r_info = resp.json()
+        # print( r_info)
+        return render_template("privPage.html", username=loginName, name=r_info['name'])
     else:
-        #if the user ir authenticated
-        # print(userToken)
-
-        #we can use the userToken to access the fenix
-
-        params = {'access_token': userToken}
-        resp = requests.get("https://fenix.tecnico.ulisboa.pt/api/fenix/v1/person", params = params)
-
-        if (resp.status_code == 200):
-            r_info = resp.json()
-            # print( r_info)
-            return render_template("privPage.html", username=loginName, name=r_info['name'])
-        else:
-            return "oops"
+        return "oops"
 
 @app.route('/userAuth')
 def userAuthenticated():
@@ -74,27 +74,28 @@ def userAuthenticated():
     # print (response.status_code)
     if(response.status_code == 200):
         #if we receive the token
-        # print ('getting user info')
         r_token = response.json()
-        # print(r_token)
 
-        params = {'access_token': r_token['access_token']}
-        resp = requests.get("https://fenix.tecnico.ulisboa.pt/api/fenix/v1/person", params = params)
-        r_info = resp.json()
-        # print( r_info)
+        secret = secrets.token_urlsafe()
 
-        # we store it
         global dict
-        dict.update({r_info['username']:r_token['access_token']})
-
+        while dict.get(secret):
+            secret = secrets.token_urlsafe()
+        
+        # we store it
+        dict.update({secret:r_token['access_token']})
 
         #now the user has done the login
-        return jsonify(r_info)
+        # return jsonify(r_info)
         #we show the returned infomration
         #but we could redirect the user to the private page
-        return redirect('/private') #comment the return jsonify....
+        print("Before")
+        # requests.post('ttp://127.0.0.1:5000/', data = {"secret": secret})
+        return redirect(url_for("private_page", secret = secret))
+        # print("After")
+        # return requests.post('http://127.0.0.1:5000/', data = {"secret": secret}) #comment the return jsonify....
     else:
-        return 'oops'
+        return 'oops 1'
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run()

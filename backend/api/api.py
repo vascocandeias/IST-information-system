@@ -31,7 +31,6 @@ def api(service, subpath):
     if request.method == 'GET':
         aux = requests.get(url).json()
     elif request.method == 'POST':
-        # breakpoint()
         aux = requests.post(url, data = request.values).json()
     elif request.method == 'PUT':
         aux = requests.put(url, data = request.values).json()
