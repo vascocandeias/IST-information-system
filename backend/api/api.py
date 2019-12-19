@@ -21,6 +21,7 @@ fenixLoginpage= "https://fenix.tecnico.ulisboa.pt/oauth/userdialog?client_id=%s&
 fenixacesstokenpage = 'https://fenix.tecnico.ulisboa.pt/oauth/access_token'
 
 dict = {}
+secretsDict = {}
 app = Flask(__name__)
 
 @app.route('/users')
@@ -41,7 +42,7 @@ def private_page(secret = ""):
     #if the user ir authenticated
     #we can use the userToken to access the fenix
 
-    return render_template("privPage.html", token = userToken)
+    return render_template("privPage.html", token = request.values.get("secret"))
 
     # params = {'access_token': userToken}
     # resp = requests.get("https://fenix.tecnico.ulisboa.pt/api/fenix/v1/person", params = params)
@@ -75,6 +76,7 @@ def userAuthenticated():
         
         # we store it
         dict.update({secret:r_token['access_token']})
+        # breakpoint()
 
         #now the user has done the login
         return redirect(url_for("private_page", secret = secret))
@@ -86,6 +88,36 @@ def userAuthenticated():
 def camera():
     return render_template("camera.html")
     
+
+@app.route('/mobile/id', methods=["GET", "POST"])
+def id():
+    user = {"photo":"https://www.w3schools.com/images/w3schools_green.jpg", "name":"NAME", "istid":"425496"}
+    return render_template("secret.html", user=user)
+    
+@app.route('/mobile/secret', methods=["POST", "GET"])
+def getSecret():
+    global secretsDict
+    # print("Secret: " + request.values.get("secret"))
+    # breakpoint()
+    if request.method == "POST":
+        secret = secrets.token_urlsafe(5)
+        while secretsDict.get(secret):
+            secret = secrets.token_urlsafe()
+        
+        secretsDict.update({secret:dict.get(request.values.get("secret"))})
+        print(secretsDict)
+        return {"secret":secret}
+    
+    if request.method == "GET":
+        secret = request.values["secret"]
+        print(request.values)
+        token = secretsDict.pop(secret)
+        params = {'access_token': token}
+        resp = requests.get("https://fenix.tecnico.ulisboa.pt/api/fenix/v1/person", params = params)
+        print(resp.json())
+        return resp.json()
+        
+
 @app.route('/APi/<service>', defaults={'subpath': ''}, methods=['GET', 'POST'])
 @app.route('/API/<service>/<path:subpath>', methods=['GET', 'POST', 'PUT', 'DELETE'])
 def api(service, subpath):

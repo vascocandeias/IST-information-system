@@ -1,17 +1,22 @@
 <!doctype html>
 <title>PRIVATE PAGE</title>
+<head>
+    <script type="text/javascript">
+        sessionStorage.setItem("secret", {{token|tojson}});
+        console.log({{token|tojson}});
+        var variable = 3;
+        var variable2 = {{token|tojson}};
+    </script>
+</head>
 <body>
-  <h1> User Mobile Aplication</h1>
-  <h3>IST Information System</h3><br>
-  <form action="/camera" method="POST">
-    <input type="hidden" id="token" value="{{ token }}" > 
-    For a QR CODE reader - <input type="submit" value="Click here">
-  </form>
-  <br>
-  <form action="/id" method="POST">
-    <input type="hidden" id="token" value="{{ token }}" > 
-    To perform user validation - <input type="submit" value="Click here">
-  </form>
+    <h1> User Mobile Aplication</h1>
+    <h3>IST Information System</h3><br>
+    <form action="/mobile/camera" method="POST">
+        For a QR CODE reader - <input type="submit" value="Click here">
+    </form>
+    <br>
+    <form action="/mobile/id" method="POST">
+        To perform user validation - <input type="submit" value="Click here">
+    </form>
 </body>
 
-  
