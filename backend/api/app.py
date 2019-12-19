@@ -14,9 +14,7 @@ clientSecret = "FlO1nGCmmV+KtaTFRMyoJtNMMZZpZSD4zme+cNHfq4mDQEXFbJqSzJBhgtEdZ2tb
 fenixLoginpage= "https://fenix.tecnico.ulisboa.pt/oauth/userdialog?client_id=%s&redirect_uri=%s"
 fenixacesstokenpage = 'https://fenix.tecnico.ulisboa.pt/oauth/access_token'
 
-loginName = False
-userToken = None
-code = False
+PORT = 5000
 dict = {}
 app = Flask(__name__)
 
@@ -32,6 +30,7 @@ def get_users():
 def private_page(secret = ""):
     #this page can only be accessed by a authenticated username
     userToken = dict.get(request.values.get("secret"))
+    print("oi")
 
     if userToken == None:
         #if the user is not authenticated
@@ -98,4 +97,4 @@ def userAuthenticated():
         return 'oops 1'
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port = PORT)

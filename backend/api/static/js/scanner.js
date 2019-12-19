@@ -632,7 +632,7 @@ function roomTemplate(room) {
 
 var date;
 
-document.getElementById("divDestiny").innerHTML = `<h1>Unknown Type</h1><br><pre>${JSON.stringify(room, null, 2)}</pre>`;
+// document.getElementById("divDestiny").innerHTML = `<h1>Unknown Type</h1><br><pre>${JSON.stringify(room, null, 2)}</pre>`;
 
 let scanner = new Instascan.Scanner({ video: document.getElementById('preview'), scanPeriod: 5 });
 
