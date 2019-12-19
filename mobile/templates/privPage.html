@@ -1,13 +1,17 @@
 <!doctype html>
 <title>PRIVATE PAGE</title>
 <body>
-  <form action="/camera">
+  <h1> User Mobile Aplication</h1>
+  <h3>IST Information System</h3><br>
+  <form action="/camera" method="POST">
     <input type="hidden" id="token" value="{{ token }}" > 
-    <input type="submit" value="QR Code">
-  </form>    <button></button>
-  <form action="/id">
+    For a QR CODE reader - <input type="submit" value="Click here">
+  </form>
+  <br>
+  <form action="/id" method="POST">
     <input type="hidden" id="token" value="{{ token }}" > 
-    <input type="submit" value="Identification">
+    To perform user validation - <input type="submit" value="Click here">
   </form>
 </body>
+
   
