@@ -2,15 +2,15 @@ from flask import Flask, render_template, request
 import logging
 import requests
 import json
+import sys
+sys.path.append('../utils')
+from Cache import Cache
 
 PORT = 5001
 URL = "https://fenix.tecnico.ulisboa.pt/api/fenix/v1/spaces/"
-
 #TODO: Meter retornos 404 bem
 
 app = Flask(__name__)
-# logging.basicConfig(filename='../backend/log.txt', level=logging.DEBUG, format='%(asctime)s %(levelname)s rooms: %(message)s')
-# logging.basicConfig(filename='/backend/log.txt', level=logging.DEBUG, format='%(asctime)s %(levelname)s rooms: %(message)s')
 
 @app.route('/')
 def home_page():
@@ -19,11 +19,18 @@ def home_page():
 
 @app.route('/<id>')
 def get_room(id):
+
+    global cache
+    data = cache.get(id)
+
+    if data:
+        return data
+
     r = requests.get(url = URL + id)
-    data = r.json()
     try:
+        data = r.json()
         if (data.get("description") is not None and data["description"] == "id not found") or data.get("type") != "ROOM":
-            return None
+            return {}
 
         parent = data 
 
@@ -31,9 +38,13 @@ def get_room(id):
             parent = requests.get(url = URL + parent.get("parentSpace").get("id")).json()
 
         data["building"] = parent.get("name")
+
+        cache.put(id, data)
         return data
     except:
-        return None
+        return {}
 
 if __name__ == '__main__': 
+    global cache
+    cache = Cache(100, hours=1)
     app.run(port=PORT)

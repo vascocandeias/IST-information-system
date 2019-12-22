@@ -1,7 +1,4 @@
-from flask import Flask
-from flask import render_template
-from flask import request, redirect
-from flask import jsonify
+from flask import Flask, render_template, request, redirect
 from datetime import datetime
 import requests
 import json
@@ -14,7 +11,6 @@ URL_LOG = "http://127.0.0.1:5006"
 app = Flask(__name__)
 filename = 'secretariats.pickle'
 PORT = 5005
-# cur_id
 
 @app.before_request
 def before():
@@ -40,7 +36,6 @@ def home_page():
         secretariat['id'] = cur_id
         cur_id += 1
         data = request.values
-        # breakpoint()
         secretariat['location'] = data.get('location')
         secretariat['name'] = data.get('name')
         secretariat['description'] = data.get('description')
@@ -55,7 +50,7 @@ def home_page():
             print(e)
             print("unable to pickle. quitting")
             exit()
-        return jsonify(secretariat)
+        return secretariat
 
 
 @app.route('/<id>', methods=['GET', 'PUT', 'DELETE'])
@@ -63,9 +58,14 @@ def get_sectreteriat(id):
     global cur_id
     global secretariats
 
-    secretariat = list(filter(lambda secretariat: secretariat['id'] == int(id), secretariats))
+    try:
+        secretariat = list(filter(lambda secretariat: secretariat['id'] == int(id), secretariats))
+    except:
+        secretariat = []
+
     if secretariat == []:
-        return jsonify({})
+        return {}
+        
     secretariat = secretariat[0]
     
     if request.method == 'GET':
@@ -74,8 +74,9 @@ def get_sectreteriat(id):
     if request.method == 'PUT':
         data = request.values
         for x in data:
-            aux = {x: data[x]}
-            secretariat.update(aux)
+            if x in secretariat:
+                aux = {x: data[x]}
+                secretariat.update(aux)
         try:
             f = open(filename, "wb")
             pickle.dump(secretariats, f)
@@ -106,7 +107,6 @@ if __name__ == '__main__':
         f = open(filename, "rb")
         secretariats = pickle.load(f)
         f.close()
-        # print(secretariats)
     except FileNotFoundError:
         print("no pickle found. starting fresh")
         secretariats = []
@@ -117,7 +117,6 @@ if __name__ == '__main__':
 
     for secretariat in secretariats:
         cur_id = secretariat["id"] if secretariat["id"] > cur_id else cur_id
-
     cur_id += 1
         
     app.run(port=PORT)

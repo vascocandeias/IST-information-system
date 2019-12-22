@@ -12,11 +12,11 @@ import requests
 import json
 import pickle
 
-
 ################# Global variables
 PORT = 5000
 APIURL = "http://127.0.0.1:" + str(PORT) + "/API"
 app = Flask(__name__)
+
 
 ################# API variables
 services = {
@@ -41,6 +41,9 @@ bootstrap = Bootstrap(app)
 login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = '/amdin/login'
+SECRETARIAT_URL = APIURL + "/secretariats"
+# to use API POST, PUT and DELETE, comment line below
+SECRETARIAT_URL = services["secretariats"]
 
 
 ########################################### Mobile app ########################################### 
@@ -182,8 +185,11 @@ def user_lougout():
 
 
 ############################################### API ############################################### 
-@app.route('/API/<service>', defaults={'subpath': ''}, methods=['GET', 'POST'])
-@app.route('/API/<service>/<path:subpath>', methods=['GET', 'POST', 'PUT', 'DELETE'])
+# @app.route('/API/<service>', defaults={'subpath': ''}, methods=['GET', 'POST'])
+# @app.route('/API/<service>/<path:subpath>', methods=['GET', 'POST', 'PUT', 'DELETE'])
+# To use API for POST, PUT and DELETE methods, uncomment two lines above and comment line bellow
+@app.route('/API/<service>', defaults={'subpath': ''}, methods=['GET'])
+@app.route('/API/<service>/<path:subpath>', methods=['GET'])
 def api(service, subpath):
     try:
         url = services[service] + '/' + subpath
@@ -278,10 +284,7 @@ def load_user(user_id):
 
 @app.route('/admin')
 def index():
-    print(current_user.is_authenticated)
-    print(current_user.is_active)
     if current_user.is_authenticated:
-        print(current_user.username)
         return render_template("mainPageAdmin.html", name=current_user.username, login=True)
     else:
         return render_template("mainPageAdmin.html", name="", login=False)
@@ -335,7 +338,7 @@ def show_logs():
 @app.route('/admin/secretariats', methods=["GET", "POST"])
 @login_required
 def secretariat_list_page():
-    send_url = APIURL + '/secretariats'
+    send_url = SECRETARIAT_URL
     if request.method=="GET":
         try:
             data = requests.get(url=send_url).json()
@@ -354,7 +357,7 @@ def secretariat_list_page():
 @app.route('/admin/secretariats/<id>', methods=[ "GET", "POST"])
 @login_required
 def secretariat(id):
-    send_url = APIURL + '/secretariats/' + id
+    send_url = SECRETARIAT_URL + '/' + id
     if request.method=="GET":
         try:
             data = requests.get(url=send_url).json()

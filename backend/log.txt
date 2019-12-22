@@ -6,3 +6,4 @@
 2019-12-22 01:01:19,637 DEBUG canteen: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
 2019-12-22 01:01:19,981 DEBUG canteen: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/canteen HTTP/1.1" 200 None
 2019-12-22 01:01:20,033 INFO canteen: 127.0.0.1 - - [22/Dec/2019 01:01:20] "GET /2019/12/23 HTTP/1.1" 200 -
+2019-12-22 11:27:18,908 INFO canteen:  * Running on https://127.0.0.1:5002/ (Press CTRL+C to quit)

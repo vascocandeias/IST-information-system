@@ -4,6 +4,9 @@ from flask import request
 import logging
 import requests
 import json
+import sys
+sys.path.append('../utils')
+from Cache import Cache
 
 PORT = 5002
 URL = "https://fenix.tecnico.ulisboa.pt/api/fenix/v1/canteen"
@@ -11,9 +14,7 @@ URL = "https://fenix.tecnico.ulisboa.pt/api/fenix/v1/canteen"
 #TODO: Meter retornos 404 bem
 
 app = Flask(__name__)
-logging.basicConfig(filename='../backend/log.txt', level=logging.DEBUG, format='%(asctime)s %(levelname)s canteen: %(message)s')
-# logging.basicConfig(filename='/backend/log.txt', level=logging.DEBUG, format='%(asctime)s %(levelname)s canteen: %(message)s')
-    
+
 @app.route('/')
 def home_page():
     #TODO: adicionar form para meter data?
@@ -32,4 +33,6 @@ def get_canteen(year, month, day):
         return {}
 
 if __name__ == '__main__': 
+    global cache
+    cache = Cache(100, days=1)
     app.run(port=PORT)
