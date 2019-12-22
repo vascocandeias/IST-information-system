@@ -11,12 +11,12 @@
 <p>Search information about:</p>
 <ul>
     <li><a href="/web/secretariats">Secretariats</a></li>
-    <li>Canteen: <form action="/web/canteen" method= "post">
-        date: <input type="date" name="day">
+    <li>Canteen: <form action="/web/canteen" method= "get">
+        date: <input type="date" name="day" required>
         <input type="submit">
     </form></li>
-    <li>Rooms <form action="/web/rooms" method="post">
-        id: <input type="number" name="id" min="0">
+    <li>Rooms <form action="/web/room" method="get">
+        id: <input type="number" name="id" min="0" required>
         <input type="submit">
     </form></li>
 </ul>

@@ -1,6 +1,5 @@
-from flask import Flask, jsonify
-from flask import render_template
-from flask import request
+from flask import Flask, jsonify, render_template, request
+from datetime import datetime
 import logging
 import requests
 import json
@@ -10,10 +9,23 @@ from Cache import Cache
 
 PORT = 5002
 URL = "https://fenix.tecnico.ulisboa.pt/api/fenix/v1/canteen"
+URL_LOG = "http://127.0.0.1:5006"
+app = Flask(__name__)
+
+@app.before_request
+def before():
+    data = {
+        "ip": request.environ.get('REMOTE_ADDR', 'unknown'),
+        "time": str(datetime.now()),
+        "service": app.name,
+        "method": request.method,
+        "endpoint": request.path,
+        "payload": str(request.values.to_dict(flat=True)),
+        }
+    requests.post(URL_LOG, data = data)
 
 #TODO: Meter retornos 404 bem
 
-app = Flask(__name__)
 
 @app.route('/')
 def home_page():

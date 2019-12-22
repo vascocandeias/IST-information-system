@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+from datetime import datetime
 import logging
 import requests
 import json
@@ -8,9 +9,22 @@ from Cache import Cache
 
 PORT = 5001
 URL = "https://fenix.tecnico.ulisboa.pt/api/fenix/v1/spaces/"
+URL_LOG = "http://127.0.0.1:5006"
 #TODO: Meter retornos 404 bem
 
 app = Flask(__name__)
+
+@app.before_request
+def before():
+    data = {
+        "ip": request.environ.get('REMOTE_ADDR', 'unknown'),
+        "time": str(datetime.now()),
+        "service": app.name,
+        "method": request.method,
+        "endpoint": request.path,
+        "payload": str(request.values.to_dict(flat=True)),
+        }
+    requests.post(URL_LOG, data = data)
 
 @app.route('/')
 def home_page():

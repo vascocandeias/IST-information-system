@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect
 from datetime import datetime
+# from werkzeug.datastructures import CombinedMultiDict
 import requests
 import json
 import pickle
@@ -17,10 +18,10 @@ def before():
     data = {
         "ip": request.environ.get('REMOTE_ADDR', 'unknown'),
         "time": str(datetime.now()),
-        "service": 'secretariats',
+        "service": app.name,
         "method": request.method,
         "endpoint": request.path,
-        "payload": str(request.data),
+        "payload": str(request.values.to_dict(flat=True)),
         }
     requests.post(URL_LOG, data = data)
 

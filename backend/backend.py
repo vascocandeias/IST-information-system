@@ -16,7 +16,7 @@ import pickle
 PORT = 5000
 APIURL = "http://127.0.0.1:" + str(PORT) + "/API"
 app = Flask(__name__)
-
+URL_LOG = "http://127.0.0.1:5006"
 
 ################# API variables
 services = {
@@ -44,7 +44,21 @@ login_manager.login_view = '/amdin/login'
 SECRETARIAT_URL = APIURL + "/secretariats"
 # to use API POST, PUT and DELETE, comment line below
 SECRETARIAT_URL = services["secretariats"]
+LOG_URL = "http://127.0.0.1:5006/"
 
+
+############################################ Logging #############################################
+@app.before_request
+def before():
+    data = {
+        "ip": request.environ.get('REMOTE_ADDR', 'unknown'),
+        "time": str(datetime.now()),
+        "service": app.name,
+        "method": request.method,
+        "endpoint": request.path,
+        "payload": str(request.values.to_dict(flat=True)),
+        }
+    requests.post(URL_LOG, data = data)
 
 ########################################### Mobile app ########################################### 
 @app.route('/mobile', methods = ["GET", "POST"])
@@ -282,14 +296,14 @@ db = pickleDB()
 def load_user(user_id):
     return db.get_user(int(user_id))
 
-@app.route('/admin')
+@app.route('/web/admin')
 def index():
     if current_user.is_authenticated:
         return render_template("mainPageAdmin.html", name=current_user.username, login=True)
     else:
         return render_template("mainPageAdmin.html", name="", login=False)
 
-@app.route('/admin/login', methods=['GET', 'POST'])
+@app.route('/web/admin/login', methods=['GET', 'POST'])
 def login():
     try:
         form = LoginForm()
@@ -301,7 +315,7 @@ def login():
                 
                 if usr is not None:
                     login_user(usr, remember=form.remember.data)
-                    return redirect('/admin')
+                    return redirect('/web/admin')
                 else:
                     return render_template("errorPage.html", error="invalid password or username")
             return render_template("errorPage.html", error="invalid form submited")
@@ -309,23 +323,27 @@ def login():
         return render_template("errorPage.html", error=str(e))
 
 
-@app.route('/admin/signup', methods=["GET", "POST"])
+@app.route('/web/admin/signup', methods=["GET", "POST"])
 def signup():
     try:
         form = RegisterForm()
         if form.validate_on_submit():
             if db.does_user_exist(form.username.data) == False:
                 db.add_new(form.username.data, form.email.data, form.password.data)
-                return redirect('/admin')
+                return redirect('/web/admin')
             return render_template("errorPage.html", error="user already exists")
         return render_template('signup.html', form=form)
     except Exception as e:
         return render_template("errorPage.html", error=str(e))
 
-@app.route('/admin/logging')
+@app.route('/web/admin/logging')
 @login_required
 def show_logs():
     l = []
+    resp = requests.get(LOG_URL)
+    # data = resp.text.replace('\t', '<br>')
+    data = resp.text.split('\t')
+    return render_template("logsPage.html", lines=data, name=current_user.username)
     try:
         f = open("../log.txt", "r")
         l = f.readlines()
@@ -335,7 +353,7 @@ def show_logs():
         return render_template("errorPage.html", error=str(e))
 
 
-@app.route('/admin/secretariats', methods=["GET", "POST"])
+@app.route('/web/admin/secretariats', methods=["GET", "POST"])
 @login_required
 def secretariat_list_page():
     send_url = SECRETARIAT_URL
@@ -354,7 +372,7 @@ def secretariat_list_page():
         except Exception as e:
             return render_template("errorPage.html", error=str(e))
 
-@app.route('/admin/secretariats/<id>', methods=[ "GET", "POST"])
+@app.route('/web/admin/secretariats/<id>', methods=[ "GET", "POST"])
 @login_required
 def secretariat(id):
     send_url = SECRETARIAT_URL + '/' + id
@@ -383,11 +401,11 @@ def secretariat(id):
             except Exception as e:
                 return render_template("errorPage.html", error=str(e))   
 
-@app.route("/admin/logout")
+@app.route("/web/admin/logout")
 @login_required
 def logout():
     logout_user()
-    return redirect('/admin')
+    return redirect('/web/admin')
 
 ############################################ Webpages ############################################
 @app.route('/web')
@@ -422,20 +440,23 @@ def get_canteen_list():
     except Exception as e:
         return render_template("errorPage.html", error=str(e))
 
-@app.route('/web/rooms', methods=['POST'])
+@app.route('/web/room', methods=['GET'])
 def rooms_page():
-    value=int(request.form["id"])
+    value=int(request.values["id"])
     if value <= 0:
         return render_template("errorPage.html", name="id < 0")
     else:
         try:
             url_send = APIURL + '/rooms/' + str(value)
             d = requests.get(url=url_send).json()
-            return render_template("roomPage.html", id=request.form["id"], data=d)
+            return render_template("roomPage.html", id=request.values["id"], data=d)
         except Exception as e:
             return render_template("errorPage.html", error=str(e))
 
 
 ############################################ Main app ############################################
+@app.route('/')
+def firs_page():
+    return render_template('firstPage.html')
 if __name__ == '__main__': 
     app.run(port=PORT)

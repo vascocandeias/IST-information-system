@@ -10,13 +10,13 @@
 
 {% if login %}
 <ul>
-    <li><a href="/admin/logging">Check logs</a></li>
-    <li><a href="/admin/secretariats">Change secretariats</a> </li>
+    <li><a href="/web/admin/logging">Check logs</a></li>
+    <li><a href="/web/admin/secretariats">Change secretariats</a> </li>
 </ul>
 <br>
-<p>Logged in as {{ name }}. <a href="/admin/logout">Log out</a>.</p>
+<p>Logged in as {{ name }}. <a href="/web/admin/logout">Log out</a>.</p>
 {% else %}
-<p>Please <a href="/admin/signup">Sign Up</a> or <a href="/admin/login">Log In</a>.</p>
+<p>Please <a href="/web/admin/signup">Sign Up</a> or <a href="/web/admin/login">Log In</a>.</p>
 {% endif %}
 </body>
 </html>

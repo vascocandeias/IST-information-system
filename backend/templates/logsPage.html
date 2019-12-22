@@ -8,11 +8,18 @@
 <body>
 
 <h1>Log File</h1>
+<div id="logs"></div>
+<!-- <script type="text/javascript">
+    var str = "{{lines}}";
+    document.getElementById("logs").innerHTML = str;
+</script> -->
+<!-- {{lines}} -->
+
 
 {% for l in lines %}
     {{ l }}<br>
 {% endfor %}
 <br><br>
-<p>Logged in as: {{ name }}. <a href="/admin/logout">Log out</a>.</p>
+<p>Logged in as: {{ name }}. <a href="/web/admin/logout">Log out</a>.</p>
 </body>
 </html>

@@ -1,0 +1,114 @@
+	127.0.0.1 2019-12-22 19:00:40.691629 secretariats GET /4 payload: {}
+	127.0.0.1 2019-12-22 19:00:41.023796 secretariats GET /4 payload: {}
+	127.0.0.1 2019-12-22 19:00:41.220036 secretariats GET /4 payload: {}
+	127.0.0.1 2019-12-22 19:00:41.470330 secretariats GET /4 payload: {}
+	127.0.0.1 2019-12-22 19:01:00.229798 secretariats PUT /4 payload: {'_method': 'PUT', 'name': 'hey', 'location': 'None', 'description': 'None\r\n', 'hours': 'None\r\n'}
+	127.0.0.1 2019-12-22 19:15:28.440150 backend GET / payload: {}
+	127.0.0.1 2019-12-22 19:15:32.822851 backend GET /web payload: {}
+	127.0.0.1 2019-12-22 19:15:34.358766 backend GET /web/secretariats payload: {}
+	127.0.0.1 2019-12-22 19:15:34.368738 backend GET /API/secretariats payload: {}
+	127.0.0.1 2019-12-22 19:15:34.421443 secretariats GET / payload: {}
+	127.0.0.1 2019-12-22 19:15:35.563699 backend GET /web/secretariats/1 payload: {}
+	127.0.0.1 2019-12-22 19:15:35.570726 backend GET /API/secretariats/1 payload: {}
+	127.0.0.1 2019-12-22 19:15:35.578658 secretariats GET /1 payload: {}
+	127.0.0.1 2019-12-22 19:15:38.934294 backend GET /web/secretariats/2 payload: {}
+	127.0.0.1 2019-12-22 19:15:38.944268 backend GET /API/secretariats/2 payload: {}
+	127.0.0.1 2019-12-22 19:15:38.950251 secretariats GET /2 payload: {}
+	127.0.0.1 2019-12-22 19:15:45.067944 backend GET /admin/logging payload: {}
+	127.0.0.1 2019-12-22 19:15:45.498797 backend GET /favicon.ico payload: {}
+	127.0.0.1 2019-12-22 19:15:56.445230 backend GET /admin/logging payload: {}
+	127.0.0.1 2019-12-22 19:15:56.861121 backend GET /favicon.ico payload: {}
+	127.0.0.1 2019-12-22 19:16:19.095508 backend POST /web/canteen payload: {'day': '2019-12-18'}
+	127.0.0.1 2019-12-22 19:16:19.107475 backend GET /API/canteen/2019/12/18 payload: {}
+	127.0.0.1 2019-12-22 19:16:19.113458 canteen GET /2019/12/18 payload: {}
+	127.0.0.1 2019-12-22 19:16:23.768171 backend GET /admin/logging payload: {}
+	127.0.0.1 2019-12-22 19:16:24.114915 backend GET /favicon.ico payload: {}
+	127.0.0.1 2019-12-22 19:16:33.378259 backend POST /web/rooms payload: {'id': '45678'}
+	127.0.0.1 2019-12-22 19:16:33.388227 backend GET /API/rooms/45678 payload: {}
+	127.0.0.1 2019-12-22 19:16:33.395208 rooms GET /45678 payload: {}
+	127.0.0.1 2019-12-22 19:16:50.359668 backend POST /web/rooms payload: {'id': '6'}
+	127.0.0.1 2019-12-22 19:16:50.371634 backend GET /API/rooms/6 payload: {}
+	127.0.0.1 2019-12-22 19:16:50.377653 rooms GET /6 payload: {}
+	127.0.0.1 2019-12-22 19:17:02.787225 backend GET /mobile payload: {}
+	127.0.0.1 2019-12-22 19:17:05.290303 backend GET /userAuth payload: {'code': 'f6a13102cca582a09c92c8c2eb3c54989af6be107180a71271e8299c9c2c2c581272c6c411712db4750d7767650892a5aa546922acd76daa19a10a93619dff15'}
+	127.0.0.1 2019-12-22 19:17:05.397818 backend GET /mobile payload: {}
+	127.0.0.1 2019-12-22 19:17:09.718076 backend GET /mobile/logout payload: {}
+	127.0.0.1 2019-12-22 19:17:13.486327 backend GET /admin/logging payload: {}
+	127.0.0.1 2019-12-22 19:17:13.830425 backend GET /favicon.ico payload: {}
+	127.0.0.1 2019-12-22 19:17:27.355219 backend GET /mobile payload: {}
+	127.0.0.1 2019-12-22 19:17:30.932386 backend GET /userAuth payload: {'code': 'c2fdf99f291531f79f9e01774306167d72585affeee6bde696c9dd202e70e379acc3d8c50d535799a3c67b5f68c4f59edfbcce44f130b85e612606b015093f76'}
+	127.0.0.1 2019-12-22 19:17:31.047650 backend GET /mobile payload: {}
+	127.0.0.1 2019-12-22 19:17:33.640483 backend GET /mobile/id payload: {}
+	127.0.0.1 2019-12-22 19:17:34.290884 backend GET /static/js/id.js payload: {}
+	127.0.0.1 2019-12-22 19:17:35.541903 backend POST /mobile/secret payload: {}
+	127.0.0.1 2019-12-22 19:17:36.060385 backend GET /mobile/requests/CvPlA3Q payload: {}
+	127.0.0.1 2019-12-22 19:17:36.578247 backend GET /mobile/requests/CvPlA3Q payload: {}
+	127.0.0.1 2019-12-22 19:17:37.080822 backend GET /mobile/requests/CvPlA3Q payload: {}
+	127.0.0.1 2019-12-22 19:17:37.562279 backend GET /mobile/requests/CvPlA3Q payload: {}
+	127.0.0.1 2019-12-22 19:17:38.080991 backend GET /mobile/requests/CvPlA3Q payload: {}
+	127.0.0.1 2019-12-22 19:17:38.566434 backend GET /mobile/requests/CvPlA3Q payload: {}
+	127.0.0.1 2019-12-22 19:17:39.080088 backend GET /mobile/requests/CvPlA3Q payload: {}
+	127.0.0.1 2019-12-22 19:17:39.561303 backend GET /mobile/requests/CvPlA3Q payload: {}
+	127.0.0.1 2019-12-22 19:17:40.079182 backend GET /mobile/requests/CvPlA3Q payload: {}
+	127.0.0.1 2019-12-22 19:17:40.562865 backend GET /mobile/requests/CvPlA3Q payload: {}
+	127.0.0.1 2019-12-22 19:17:40.771623 backend GET /mobile/secret payload: {'secret': 'CvPlA3Q'}
+	127.0.0.1 2019-12-22 19:17:41.061701 backend GET /mobile/requests/CvPlA3Q payload: {}
+	127.0.0.1 2019-12-22 19:17:51.820325 backend GET /admin/logging payload: {}
+	127.0.0.1 2019-12-22 19:17:52.162415 backend GET /favicon.ico payload: {}
+	127.0.0.1 2019-12-22 19:18:33.693748 backend GET / payload: {}
+	127.0.0.1 2019-12-22 19:18:35.600785 backend GET /web payload: {}
+	127.0.0.1 2019-12-22 19:18:39.353857 backend GET /web/secretariats payload: {}
+	127.0.0.1 2019-12-22 19:18:39.362867 backend GET /API/secretariats payload: {}
+	127.0.0.1 2019-12-22 19:18:39.370812 secretariats GET / payload: {}
+	127.0.0.1 2019-12-22 19:18:43.606171 backend GET /admin/logging payload: {}
+	127.0.0.1 2019-12-22 19:18:43.951249 backend GET /favicon.ico payload: {}
+	127.0.0.1 2019-12-22 20:02:07.910927 backend GET / payload: {}
+	127.0.0.1 2019-12-22 20:02:11.952336 backend GET /web payload: {}
+	127.0.0.1 2019-12-22 20:02:32.706996 backend GET / payload: {}
+	127.0.0.1 2019-12-22 20:02:32.950991 backend GET /favicon.ico payload: {}
+	127.0.0.1 2019-12-22 20:02:44.586005 backend GET / payload: {}
+	127.0.0.1 2019-12-22 20:02:46.475501 backend GET /web payload: {}
+	127.0.0.1 2019-12-22 20:02:58.495822 backend GET / payload: {}
+	127.0.0.1 2019-12-22 20:03:04.564108 backend GET /web payload: {}
+	127.0.0.1 2019-12-22 20:03:06.243109 backend GET /web/secretariats payload: {}
+	127.0.0.1 2019-12-22 20:03:06.289414 backend GET /API/secretariats payload: {}
+	127.0.0.1 2019-12-22 20:03:06.333303 secretariats GET / payload: {}
+	127.0.0.1 2019-12-22 20:03:08.272861 backend GET /web/secretariats/12 payload: {}
+	127.0.0.1 2019-12-22 20:03:08.324923 backend GET /API/secretariats/12 payload: {}
+	127.0.0.1 2019-12-22 20:03:08.376873 secretariats GET /12 payload: {}
+	127.0.0.1 2019-12-22 20:03:12.548221 backend GET /web/secretariats/10 payload: {}
+	127.0.0.1 2019-12-22 20:03:12.596166 backend GET /API/secretariats/10 payload: {}
+	127.0.0.1 2019-12-22 20:03:12.636213 secretariats GET /10 payload: {}
+	127.0.0.1 2019-12-22 20:03:19.370581 backend GET /web/secretariats payload: {}
+	127.0.0.1 2019-12-22 20:03:19.426632 backend GET /API/secretariats payload: {}
+	127.0.0.1 2019-12-22 20:03:19.474580 secretariats GET / payload: {}
+	127.0.0.1 2019-12-22 20:03:20.260992 backend GET /web/secretariats/7 payload: {}
+	127.0.0.1 2019-12-22 20:03:20.308991 backend GET /API/secretariats/7 payload: {}
+	127.0.0.1 2019-12-22 20:03:20.349031 secretariats GET /7 payload: {}
+	127.0.0.1 2019-12-22 20:03:24.592480 backend POST /web/canteen payload: {'day': ''}
+	127.0.0.1 2019-12-22 20:04:34.041081 backend GET /web payload: {}
+	127.0.0.1 2019-12-22 20:04:39.057435 backend POST /web/rooms payload: {'id': ''}
+	127.0.0.1 2019-12-22 20:04:51.275332 backend GET /web payload: {}
+	127.0.0.1 2019-12-22 20:04:58.837517 backend POST /web/rooms payload: {'id': '8'}
+	127.0.0.1 2019-12-22 20:04:58.881514 backend GET /API/rooms/8 payload: {}
+	127.0.0.1 2019-12-22 20:04:58.937516 rooms GET /8 payload: {}
+	127.0.0.1 2019-12-22 20:06:49.880658 backend POST /web/rooms payload: {'id': '2448131363667'}
+	127.0.0.1 2019-12-22 20:06:49.904656 backend GET /API/rooms/2448131363667 payload: {}
+	127.0.0.1 2019-12-22 20:06:49.932694 rooms GET /2448131363667 payload: {}
+	127.0.0.1 2019-12-22 20:08:33.104322 backend GET /web payload: {}
+	127.0.0.1 2019-12-22 20:08:40.360479 backend GET /web payload: {}
+	127.0.0.1 2019-12-22 20:08:40.588476 backend GET /favicon.ico payload: {}
+	127.0.0.1 2019-12-22 20:08:44.741537 backend GET /web payload: {}
+	127.0.0.1 2019-12-22 20:09:01.917861 backend POST /web/rooms payload: {'id': '1'}
+	127.0.0.1 2019-12-22 20:09:01.985865 backend GET /API/rooms/1 payload: {}
+	127.0.0.1 2019-12-22 20:09:02.033856 rooms GET /1 payload: {}
+	127.0.0.1 2019-12-22 20:09:12.505503 backend POST /web/rooms payload: {'id': '1'}
+	127.0.0.1 2019-12-22 20:09:12.530444 backend GET /API/rooms/1 payload: {}
+	127.0.0.1 2019-12-22 20:09:12.547089 rooms GET /1 payload: {}
+	127.0.0.1 2019-12-22 20:09:13.240401 backend GET /favicon.ico payload: {}
+	127.0.0.1 2019-12-22 20:12:20.851898 backend GET /web payload: {}
+	127.0.0.1 2019-12-22 20:12:23.920520 backend GET /web/room payload: {'id': '1'}
+	127.0.0.1 2019-12-22 20:13:03.665041 backend GET /web/room payload: {'id': '1'}
+	127.0.0.1 2019-12-22 20:13:41.462055 backend GET /web/room payload: {'id': '1'}
+	127.0.0.1 2019-12-22 20:13:41.474056 backend GET /API/rooms/1 payload: {}
+	127.0.0.1 2019-12-22 20:13:41.486093 rooms GET /1 payload: {}
