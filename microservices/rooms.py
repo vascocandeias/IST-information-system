@@ -46,5 +46,5 @@ def get_room(id):
 
 if __name__ == '__main__': 
     global cache
-    cache = Cache(100, hours=1)
+    cache = Cache(100, days=1)
     app.run(port=PORT)

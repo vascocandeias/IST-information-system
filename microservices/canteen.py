@@ -22,11 +22,17 @@ def home_page():
 
 @app.route('/<year>/<month>/<day>')
 def get_canteen(year, month, day):
+    global cache
     try:
         date = day + '/' + month + '/' + year
+        data = cache.get(date)
+        if data:
+            return data
+
         data = requests.get(url = URL).json()
         for x in data:
             if x["day"] == date:
+                cache.put(date, x["meal"])
                 return json.dumps(x["meal"])
         return {}
     except:
@@ -34,5 +40,5 @@ def get_canteen(year, month, day):
 
 if __name__ == '__main__': 
     global cache
-    cache = Cache(100, days=1)
+    cache = Cache(7, days=3)
     app.run(port=PORT)
