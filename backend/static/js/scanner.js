@@ -98,7 +98,6 @@ function hasTests(room) {
         }
     }
     return false;
-}
 
 function hasGeneric(room) {
     for (const event of room.events) {

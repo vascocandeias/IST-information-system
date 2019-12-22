@@ -9,13 +9,12 @@ import requests
 APIURL="http://127.0.0.1:5004"
 
 app = Flask(__name__)
-logging.basicConfig(filename='../log.txt', level=logging.DEBUG, format='%(asctime)s %(levelname)s user-webpages: %(message)s')
 
-@app.route('/')
+@app.route('/web')
 def hello_world():
     return render_template("mainPage.html")
 
-@app.route('/secretariats')
+@app.route('/web/secretariats')
 def secretariat_list_page():
     try:
         send_url = APIURL + '/secretariats'
@@ -24,7 +23,7 @@ def secretariat_list_page():
     except Exception as e:
         return render_template("errorPage.html", error=str(e))
 
-@app.route('/secretariats/<id>')
+@app.route('/web/secretariats/<id>')
 def secretariat(id):
     try:
         send_url = APIURL + '/secretariats/' + id
@@ -33,7 +32,7 @@ def secretariat(id):
     except Exception as e:
         return render_template("errorPage.html", error=str(e))
 
-@app.route('/canteen', methods=['POST'])
+@app.route('/web/canteen', methods=['POST'])
 def get_canteen_list():
     dt = datetime.strptime(request.form["day"], '%Y-%m-%d')
     try:
@@ -43,7 +42,7 @@ def get_canteen_list():
     except Exception as e:
         return render_template("errorPage.html", error=str(e))
 
-@app.route('/rooms', methods=['POST'])
+@app.route('/web/rooms', methods=['POST'])
 def rooms_page():
     value=int(request.form["id"])
     if value <= 0:
@@ -55,31 +54,6 @@ def rooms_page():
             return render_template("roomPage.html", id=request.form["id"], data=d)
         except Exception as e:
             return render_template("errorPage.html", error=str(e))
-
-"""
-@app.route('/addValue', methods=['POST'])
-def add_Value():
-    s = str(request.form)
-    if request.form["val"]== None:
-        pass
-    else:
-        val = request.form["val"]
-        st.store(val)
-    s = st.getSize()
-    return hello_world()
-
-@app.route('/value/<key>')
-def get_Value(key):
-    val = st.getValue(key)
-    if val == None:
-        return render_template("errorPage.html", name = request.args["key"])
-    return str(val)
-
-@app.route('/getValue')
-def get_Value2():
-    key = str(request.args["key"])
-    return get_Value(key)
-"""
 
 if __name__ == '__main__':
     app.run(port=5005)

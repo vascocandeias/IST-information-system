@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- form-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log In Page</title>
+</head>
+<body>
+
+<!--{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}-->
+
+<h1>Log in</h1>
+<form action="/admin/login" method="POST">
+<fieldset>
+    <legend>Log In Form</legend>
+    <!--{{ form.hidden_tag() }}
+    {{ wtf.form_field(form.username) }}
+    {{ wtf.form_field(form.password) }} -->
+    <input type="submit">
+</fieldset>
+</form>
+
+<p>Or do you want to <a href="/admin/signup">Sign Up</a> a new account? </p>
+
+<form>
+<input type="button" value="Previous Page" onclick="history.back()">
+</form>
+
+</body>
+</html>

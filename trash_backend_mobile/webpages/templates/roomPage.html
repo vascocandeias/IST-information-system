@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- id, data-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Room Page</title>
+</head>
+<body>
+<h1>Rooms</h1>
+
+<p>ID: {{ id }}</p>
+<p>Name and Location: {{  data.name  }}, {{ data.building}}, {{ data.topLevelSpace.name }}</p> 
+
+<form>
+<input type="button" value="Return" onclick="history.back()">
+</form>
+
+<p>Events:</p>
+<ul>
+{% for item in data.events %}
+    <li> Day: {{ item.day }}</li>
+    <li> From {{ item.start }} to {{ item.end }} </li>
+    {% if item.type == "GENERIC" %}
+    <li> {{ item.title }}</li>
+    {% elif item.type == "LESSON" %}
+    <li> {{ item.course.acronym }}  - {{ item.info }} - {{ item.course.name }}</li>
+    {% elif item.type == "TEST" %}
+    <li> {{ item.description }}:
+        <ul>
+        {% for i in item.courses %}
+            <li>{{ i.acronym }}, {{ i.name }}</li>
+        {% endfor %}
+        </ul>
+    </li>
+    {% else %}
+    <li>Type: {{ item.type }}</li>
+    {% endif %}
+    <br>
+{% endfor %}
+</ul>
+
+</body>
+</html>

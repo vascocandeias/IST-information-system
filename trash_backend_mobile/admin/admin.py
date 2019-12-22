@@ -3,10 +3,8 @@ from flask_bootstrap import Bootstrap
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, BooleanField
 from wtforms.validators import InputRequired, Email, Length
-# from flask_sqlalchemy  import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
-import logging
 import json
 import requests
 import pickle
@@ -85,11 +83,8 @@ APIURL="http://127.0.0.1:5004"
 
 app = Flask(__name__)
 db = pickleDB()
-logging.basicConfig(filename='../log.txt', level=logging.DEBUG, format='%(asctime)s %(levelname)s admin-webpages: %(message)s')
 app.config['SECRET_KEY'] = 'Thisissupposedtobesecret!'
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////mnt/c/Users/antho/Documents/login-example/database.db'
 bootstrap = Bootstrap(app)
-# db = SQLAlchemy(app)
 login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = '/login'
@@ -98,7 +93,7 @@ login_manager.login_view = '/login'
 def load_user(user_id):
     return db.get_user(int(user_id))
 
-@app.route('/')
+@app.route('/admin')
 def index():
     print(current_user.is_authenticated)
     print(current_user.is_active)
@@ -108,7 +103,7 @@ def index():
     else:
         return render_template("mainPage.html", name="", login=False)
 
-@app.route('/login', methods=['GET', 'POST'])
+@app.route('/admin/login', methods=['GET', 'POST'])
 def login():
     try:
         form = LoginForm()
@@ -128,7 +123,7 @@ def login():
         return render_template("errorPage.html", error=str(e))
 
 
-@app.route('/signup', methods=["GET", "POST"])
+@app.route('/admin/signup', methods=["GET", "POST"])
 def signup():
     try:
         form = RegisterForm()
@@ -141,7 +136,7 @@ def signup():
     except Exception as e:
         return render_template("errorPage.html", error=str(e))
 
-@app.route('/logging')
+@app.route('/admin/logging')
 @login_required
 def show_logs():
     l = []
@@ -154,7 +149,7 @@ def show_logs():
         return render_template("errorPage.html", error=str(e))
 
 
-@app.route('/secretariats', methods=["GET", "POST"])
+@app.route('/admin/secretariats', methods=["GET", "POST"])
 @login_required
 def secretariat_list_page():
     send_url = APIURL + '/secretariats'
@@ -173,7 +168,7 @@ def secretariat_list_page():
         except Exception as e:
             return render_template("errorPage.html", error=str(e))
 
-@app.route('/secretariats/<id>', methods=[ "GET", "POST"])
+@app.route('/admin/secretariats/<id>', methods=[ "GET", "POST"])
 @login_required
 def secretariat(id):
     send_url = APIURL + '/secretariats/' + id
@@ -202,7 +197,7 @@ def secretariat(id):
             except Exception as e:
                 return render_template("errorPage.html", error=str(e))   
 
-@app.route("/logout")
+@app.route("/admin/logout")
 @login_required
 def logout():
     logout_user()

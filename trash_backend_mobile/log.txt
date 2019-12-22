@@ -1,0 +1,782 @@
+2019-12-15 22:34:19,625 INFO api:  * Running on http://0.0.0.0:5004/ (Press CTRL+C to quit)
+2019-12-15 22:34:27,276 INFO secretariats:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-12-15 22:34:29,630 INFO rooms:  * Running on http://127.0.0.1:5001/ (Press CTRL+C to quit)
+2019-12-15 22:34:31,947 INFO canteen:  * Running on http://127.0.0.1:5002/ (Press CTRL+C to quit)
+2019-12-15 22:38:28,860 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 22:38:28,873 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 22:38:28] "GET / HTTP/1.1" 200 -
+2019-12-15 22:38:28,875 DEBUG api: http://127.0.0.1:5000 "GET / HTTP/1.1" 200 1346
+2019-12-15 22:38:28,882 INFO api: 192.168.1.79 - - [15/Dec/2019 22:38:28] "GET /secretariats HTTP/1.1" 200 -
+2019-12-15 22:38:31,808 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 22:38:31,810 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 22:38:31] "GET / HTTP/1.1" 200 -
+2019-12-15 22:38:31,810 DEBUG api: http://127.0.0.1:5000 "GET / HTTP/1.1" 200 1346
+2019-12-15 22:38:31,811 INFO api: 192.168.1.79 - - [15/Dec/2019 22:38:31] "GET /secretariats HTTP/1.1" 200 -
+2019-12-15 22:39:37,661 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 22:39:37,664 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 22:39:37] "GET / HTTP/1.1" 200 -
+2019-12-15 22:39:37,665 DEBUG api: http://127.0.0.1:5000 "GET / HTTP/1.1" 200 1346
+2019-12-15 22:39:37,667 INFO api: 192.168.1.79 - - [15/Dec/2019 22:39:37] "GET /secretariats HTTP/1.1" 200 -
+2019-12-15 22:39:48,520 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 22:39:48,536 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 22:39:48] "POST / HTTP/1.1" 200 -
+2019-12-15 22:39:48,538 DEBUG api: http://127.0.0.1:5000 "POST / HTTP/1.1" 200 79
+2019-12-15 22:39:48,542 INFO api: 192.168.1.79 - - [15/Dec/2019 22:39:48] "POST /secretariats HTTP/1.1" 200 -
+2019-12-15 22:39:52,912 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 22:39:52,916 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 22:39:52] "GET / HTTP/1.1" 200 -
+2019-12-15 22:39:52,917 DEBUG api: http://127.0.0.1:5000 "GET / HTTP/1.1" 200 1435
+2019-12-15 22:39:52,919 INFO api: 192.168.1.79 - - [15/Dec/2019 22:39:52] "GET /secretariats HTTP/1.1" 200 -
+2019-12-15 22:40:13,541 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 22:40:13,546 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 22:40:13] "GET / HTTP/1.1" 200 -
+2019-12-15 22:40:13,547 DEBUG api: http://127.0.0.1:5000 "GET / HTTP/1.1" 200 1435
+2019-12-15 22:40:13,550 INFO api: 127.0.0.1 - - [15/Dec/2019 22:40:13] "GET /secretariats HTTP/1.1" 200 -
+2019-12-15 22:40:43,507 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 22:40:43,511 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 22:40:43] "GET / HTTP/1.1" 200 -
+2019-12-15 22:40:43,512 DEBUG api: http://127.0.0.1:5000 "GET / HTTP/1.1" 200 1435
+2019-12-15 22:40:43,514 INFO api: 192.168.1.79 - - [15/Dec/2019 22:40:43] "GET /secretariats HTTP/1.1" 200 -
+2019-12-15 22:40:50,379 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 22:40:50,388 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 22:40:50] "POST / HTTP/1.1" 200 -
+2019-12-15 22:40:50,389 DEBUG api: http://127.0.0.1:5000 "POST / HTTP/1.1" 200 64
+2019-12-15 22:40:50,391 INFO api: 192.168.1.79 - - [15/Dec/2019 22:40:50] "POST /secretariats HTTP/1.1" 200 -
+2019-12-15 22:40:52,917 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 22:40:52,920 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 22:40:52] "GET / HTTP/1.1" 200 -
+2019-12-15 22:40:52,921 DEBUG api: http://127.0.0.1:5000 "GET / HTTP/1.1" 200 1509
+2019-12-15 22:40:52,923 INFO api: 192.168.1.79 - - [15/Dec/2019 22:40:52] "GET /secretariats HTTP/1.1" 200 -
+2019-12-15 22:40:57,931 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 22:40:57,940 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 22:40:57] "GET / HTTP/1.1" 200 -
+2019-12-15 22:40:57,943 DEBUG api: http://127.0.0.1:5000 "GET / HTTP/1.1" 200 1509
+2019-12-15 22:40:57,948 INFO api: 127.0.0.1 - - [15/Dec/2019 22:40:57] "GET /secretariats HTTP/1.1" 200 -
+2019-12-15 22:41:14,828 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 22:41:14,833 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 22:41:14] "GET / HTTP/1.1" 200 -
+2019-12-15 22:41:14,834 DEBUG api: http://127.0.0.1:5000 "GET / HTTP/1.1" 200 1509
+2019-12-15 22:41:14,837 INFO api: 192.168.1.79 - - [15/Dec/2019 22:41:14] "GET /secretariats HTTP/1.1" 200 -
+2019-12-15 22:41:23,597 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 22:41:23,602 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 22:41:23] "POST / HTTP/1.1" 200 -
+2019-12-15 22:41:23,603 DEBUG api: http://127.0.0.1:5000 "POST / HTTP/1.1" 200 72
+2019-12-15 22:41:23,604 INFO api: 192.168.1.79 - - [15/Dec/2019 22:41:23] "POST /secretariats HTTP/1.1" 200 -
+2019-12-15 22:41:26,051 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 22:41:26,054 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 22:41:26] "GET / HTTP/1.1" 200 -
+2019-12-15 22:41:26,054 DEBUG api: http://127.0.0.1:5000 "GET / HTTP/1.1" 200 1591
+2019-12-15 22:41:26,056 INFO api: 127.0.0.1 - - [15/Dec/2019 22:41:26] "GET /secretariats HTTP/1.1" 200 -
+2019-12-15 22:41:26,656 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 22:41:26,664 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 22:41:26] "GET / HTTP/1.1" 200 -
+2019-12-15 22:41:26,666 DEBUG api: http://127.0.0.1:5000 "GET / HTTP/1.1" 200 1591
+2019-12-15 22:41:26,673 INFO api: 192.168.1.79 - - [15/Dec/2019 22:41:26] "GET /secretariats HTTP/1.1" 200 -
+2019-12-15 22:41:34,801 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 22:41:34,807 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 22:41:34] "GET /0 HTTP/1.1" 200 -
+2019-12-15 22:41:34,809 DEBUG api: http://127.0.0.1:5000 "GET /0 HTTP/1.1" 200 79
+2019-12-15 22:41:34,812 INFO api: 192.168.1.79 - - [15/Dec/2019 22:41:34] "GET /secretariats/0 HTTP/1.1" 200 -
+2019-12-15 22:42:30,092 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 22:42:30,097 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 22:42:30] "GET / HTTP/1.1" 200 -
+2019-12-15 22:42:30,098 DEBUG api: http://127.0.0.1:5000 "GET / HTTP/1.1" 200 1591
+2019-12-15 22:42:30,100 INFO api: 192.168.1.79 - - [15/Dec/2019 22:42:30] "GET /secretariats HTTP/1.1" 200 -
+2019-12-15 22:42:31,637 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 22:42:31,639 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 22:42:31] "GET /5 HTTP/1.1" 200 -
+2019-12-15 22:42:31,640 DEBUG api: http://127.0.0.1:5000 "GET /5 HTTP/1.1" 200 69
+2019-12-15 22:42:31,641 INFO api: 192.168.1.79 - - [15/Dec/2019 22:42:31] "GET /secretariats/5 HTTP/1.1" 200 -
+2019-12-15 22:42:53,243 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 22:42:53,246 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 22:42:53] "GET /5 HTTP/1.1" 200 -
+2019-12-15 22:42:53,247 DEBUG api: http://127.0.0.1:5000 "GET /5 HTTP/1.1" 200 69
+2019-12-15 22:42:53,249 INFO api: 192.168.1.79 - - [15/Dec/2019 22:42:53] "GET /secretariats/5 HTTP/1.1" 200 -
+2019-12-15 22:42:57,655 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 22:42:57,668 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 22:42:57] "DELETE /5 HTTP/1.1" 200 -
+2019-12-15 22:42:57,671 DEBUG api: http://127.0.0.1:5000 "DELETE /5 HTTP/1.1" 200 16
+2019-12-15 22:42:57,675 INFO api: 192.168.1.79 - - [15/Dec/2019 22:42:57] "DELETE /secretariats/5 HTTP/1.1" 200 -
+2019-12-15 22:43:11,287 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 22:43:11,291 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 22:43:11] "GET / HTTP/1.1" 200 -
+2019-12-15 22:43:11,292 DEBUG api: http://127.0.0.1:5000 "GET / HTTP/1.1" 200 1512
+2019-12-15 22:43:11,294 INFO api: 127.0.0.1 - - [15/Dec/2019 22:43:11] "GET /secretariats HTTP/1.1" 200 -
+2019-12-15 22:50:09,503 INFO api:  * Running on http://0.0.0.0:5004/ (Press CTRL+C to quit)
+2019-12-15 22:51:35,393 INFO api:  * Running on http://0.0.0.0:5004/ (Press CTRL+C to quit)
+2019-12-15 22:51:40,432 INFO canteen:  * Running on http://127.0.0.1:5002/ (Press CTRL+C to quit)
+2019-12-15 22:51:42,490 INFO rooms:  * Running on http://127.0.0.1:5001/ (Press CTRL+C to quit)
+2019-12-15 22:51:44,352 INFO secretariats:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-12-15 22:51:47,402 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 22:51:47] "GET / HTTP/1.1" 200 -
+2019-12-15 22:53:04,267 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 22:53:04,275 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 22:53:04] "GET / HTTP/1.1" 200 -
+2019-12-15 22:53:04,278 DEBUG api: http://127.0.0.1:5000 "GET / HTTP/1.1" 200 1512
+2019-12-15 22:53:04,282 INFO api: 192.168.1.79 - - [15/Dec/2019 22:53:04] "GET /secretariats HTTP/1.1" 200 -
+2019-12-15 22:53:08,877 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 22:53:08,880 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 22:53:08] "GET /0 HTTP/1.1" 200 -
+2019-12-15 22:53:08,881 DEBUG api: http://127.0.0.1:5000 "GET /0 HTTP/1.1" 200 79
+2019-12-15 22:53:08,882 INFO api: 192.168.1.79 - - [15/Dec/2019 22:53:08] "GET /secretariats/0 HTTP/1.1" 200 -
+2019-12-15 22:53:15,019 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 22:53:15,023 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 22:53:15] "GET /0 HTTP/1.1" 200 -
+2019-12-15 22:53:15,023 DEBUG api: http://127.0.0.1:5000 "GET /0 HTTP/1.1" 200 79
+2019-12-15 22:53:15,024 INFO api: 192.168.1.79 - - [15/Dec/2019 22:53:15] "GET /secretariats/0 HTTP/1.1" 200 -
+2019-12-15 22:53:19,118 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 22:53:19,120 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 22:53:19] "GET /0 HTTP/1.1" 200 -
+2019-12-15 22:53:19,121 DEBUG api: http://127.0.0.1:5000 "GET /0 HTTP/1.1" 200 79
+2019-12-15 22:53:19,123 INFO api: 192.168.1.79 - - [15/Dec/2019 22:53:19] "GET /secretariats/0 HTTP/1.1" 200 -
+2019-12-15 22:53:26,407 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 22:53:26] "GET / HTTP/1.1" 200 -
+2019-12-15 22:55:31,732 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 22:55:31,737 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 22:55:31] "GET / HTTP/1.1" 200 -
+2019-12-15 22:55:31,739 DEBUG api: http://127.0.0.1:5000 "GET / HTTP/1.1" 200 1512
+2019-12-15 22:55:31,742 INFO api: 192.168.1.79 - - [15/Dec/2019 22:55:31] "GET /secretariats HTTP/1.1" 200 -
+2019-12-15 22:55:32,852 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 22:55:32,855 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 22:55:32] "GET /0 HTTP/1.1" 200 -
+2019-12-15 22:55:32,856 DEBUG api: http://127.0.0.1:5000 "GET /0 HTTP/1.1" 200 79
+2019-12-15 22:55:32,858 INFO api: 192.168.1.79 - - [15/Dec/2019 22:55:32] "GET /secretariats/0 HTTP/1.1" 200 -
+2019-12-15 22:55:35,719 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 22:55:35,723 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 22:55:35] "GET /0 HTTP/1.1" 200 -
+2019-12-15 22:55:35,724 DEBUG api: http://127.0.0.1:5000 "GET /0 HTTP/1.1" 200 79
+2019-12-15 22:55:35,727 INFO api: 192.168.1.79 - - [15/Dec/2019 22:55:35] "GET /secretariats/0 HTTP/1.1" 200 -
+2019-12-15 22:55:42,968 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 22:55:42] "GET / HTTP/1.1" 200 -
+2019-12-15 22:56:18,624 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 22:56:18,629 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 22:56:18] "GET /0 HTTP/1.1" 200 -
+2019-12-15 22:56:18,630 DEBUG api: http://127.0.0.1:5000 "GET /0 HTTP/1.1" 200 79
+2019-12-15 22:56:18,632 INFO api: 192.168.1.79 - - [15/Dec/2019 22:56:18] "GET /secretariats/0 HTTP/1.1" 200 -
+2019-12-15 22:56:22,624 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 22:56:22] "GET / HTTP/1.1" 200 -
+2019-12-15 23:15:13,531 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 23:15:13,535 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 23:15:13] "GET / HTTP/1.1" 200 -
+2019-12-15 23:15:13,535 DEBUG api: http://127.0.0.1:5000 "GET / HTTP/1.1" 200 1512
+2019-12-15 23:15:13,537 INFO api: 192.168.1.79 - - [15/Dec/2019 23:15:13] "GET /secretariats HTTP/1.1" 200 -
+2019-12-15 23:15:15,664 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 23:15:15,667 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 23:15:15] "GET /3 HTTP/1.1" 200 -
+2019-12-15 23:15:15,668 DEBUG api: http://127.0.0.1:5000 "GET /3 HTTP/1.1" 200 69
+2019-12-15 23:15:15,670 INFO api: 192.168.1.79 - - [15/Dec/2019 23:15:15] "GET /secretariats/3 HTTP/1.1" 200 -
+2019-12-15 23:17:39,333 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 23:17:39,335 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 23:17:39] "GET / HTTP/1.1" 200 -
+2019-12-15 23:17:39,336 DEBUG api: http://127.0.0.1:5000 "GET / HTTP/1.1" 200 1512
+2019-12-15 23:17:39,338 INFO api: 192.168.1.79 - - [15/Dec/2019 23:17:39] "GET /secretariats HTTP/1.1" 200 -
+2019-12-15 23:17:40,168 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 23:17:40,173 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 23:17:40] "GET /0 HTTP/1.1" 200 -
+2019-12-15 23:17:40,174 DEBUG api: http://127.0.0.1:5000 "GET /0 HTTP/1.1" 200 79
+2019-12-15 23:17:40,176 INFO api: 192.168.1.79 - - [15/Dec/2019 23:17:40] "GET /secretariats/0 HTTP/1.1" 200 -
+2019-12-15 23:17:42,727 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 23:17:42,733 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 23:17:42] "DELETE /0 HTTP/1.1" 200 -
+2019-12-15 23:17:42,734 DEBUG api: http://127.0.0.1:5000 "DELETE /0 HTTP/1.1" 200 16
+2019-12-15 23:17:42,735 INFO api: 192.168.1.79 - - [15/Dec/2019 23:17:42] "DELETE /secretariats/0 HTTP/1.1" 200 -
+2019-12-15 23:17:46,005 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 23:17:46,009 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 23:17:46] "GET / HTTP/1.1" 200 -
+2019-12-15 23:17:46,010 DEBUG api: http://127.0.0.1:5000 "GET / HTTP/1.1" 200 1423
+2019-12-15 23:17:46,012 INFO api: 192.168.1.79 - - [15/Dec/2019 23:17:46] "GET /secretariats HTTP/1.1" 200 -
+2019-12-15 23:17:50,912 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 23:17:50,920 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 23:17:50] "GET /20 HTTP/1.1" 200 -
+2019-12-15 23:17:50,922 DEBUG api: http://127.0.0.1:5000 "GET /20 HTTP/1.1" 200 72
+2019-12-15 23:17:50,928 INFO api: 192.168.1.79 - - [15/Dec/2019 23:17:50] "GET /secretariats/20 HTTP/1.1" 200 -
+2019-12-15 23:17:53,055 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 23:17:53,061 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 23:17:53] "DELETE /20 HTTP/1.1" 200 -
+2019-12-15 23:17:53,062 DEBUG api: http://127.0.0.1:5000 "DELETE /20 HTTP/1.1" 200 16
+2019-12-15 23:17:53,064 INFO api: 192.168.1.79 - - [15/Dec/2019 23:17:53] "DELETE /secretariats/20 HTTP/1.1" 200 -
+2019-12-15 23:17:55,835 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 23:17:55,840 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 23:17:55] "GET / HTTP/1.1" 200 -
+2019-12-15 23:17:55,841 DEBUG api: http://127.0.0.1:5000 "GET / HTTP/1.1" 200 1341
+2019-12-15 23:17:55,844 INFO api: 192.168.1.79 - - [15/Dec/2019 23:17:55] "GET /secretariats HTTP/1.1" 200 -
+2019-12-15 23:18:19,287 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 23:18:19,289 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 23:18:19] "GET /1 HTTP/1.1" 200 -
+2019-12-15 23:18:19,290 DEBUG api: http://127.0.0.1:5000 "GET /1 HTTP/1.1" 200 69
+2019-12-15 23:18:19,291 INFO api: 192.168.1.79 - - [15/Dec/2019 23:18:19] "GET /secretariats/1 HTTP/1.1" 200 -
+2019-12-15 23:18:26,238 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 23:18:26,240 ERROR secretariats: Exception on /1 [PUT]
+Traceback (most recent call last):
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File ".\secretariats.py", line 62, in get_sectreteriat
+    for x in data:
+TypeError: 'NoneType' object is not iterable
+2019-12-15 23:18:26,242 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 23:18:26] "PUT /1 HTTP/1.1" 500 -
+2019-12-15 23:18:26,242 DEBUG api: http://127.0.0.1:5000 "PUT /1 HTTP/1.1" 500 290
+2019-12-15 23:18:26,243 ERROR api: Exception on /secretariats/1 [PUT]
+Traceback (most recent call last):
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File ".\api.py", line 33, in api
+    aux = requests.put(url, data = request.values).json()
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\requests\models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.449.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.449.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.449.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2019-12-15 23:18:26,246 INFO api: 192.168.1.79 - - [15/Dec/2019 23:18:26] "PUT /secretariats/1 HTTP/1.1" 500 -
+2019-12-15 23:18:35,393 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 23:18:35,398 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 23:18:35] "GET /1 HTTP/1.1" 200 -
+2019-12-15 23:18:35,400 DEBUG api: http://127.0.0.1:5000 "GET /1 HTTP/1.1" 200 69
+2019-12-15 23:18:35,403 INFO api: 192.168.1.79 - - [15/Dec/2019 23:18:35] "GET /secretariats/1 HTTP/1.1" 200 -
+2019-12-15 23:19:37,006 INFO secretariats:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-12-15 23:19:40,287 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 23:19:40,293 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 23:19:40] "PUT /1 HTTP/1.1" 200 -
+2019-12-15 23:19:40,294 DEBUG api: http://127.0.0.1:5000 "PUT /1 HTTP/1.1" 200 125
+2019-12-15 23:19:40,295 INFO api: 192.168.1.79 - - [15/Dec/2019 23:19:40] "PUT /secretariats/1 HTTP/1.1" 200 -
+2019-12-15 23:19:43,456 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 23:19:43,459 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 23:19:43] "GET / HTTP/1.1" 200 -
+2019-12-15 23:19:43,460 DEBUG api: http://127.0.0.1:5000 "GET / HTTP/1.1" 200 1401
+2019-12-15 23:19:43,461 INFO api: 192.168.1.79 - - [15/Dec/2019 23:19:43] "GET /secretariats HTTP/1.1" 200 -
+2019-12-15 23:19:47,458 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 23:19:47,467 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 23:19:47] "GET /1 HTTP/1.1" 200 -
+2019-12-15 23:19:47,469 DEBUG api: http://127.0.0.1:5000 "GET /1 HTTP/1.1" 200 125
+2019-12-15 23:19:47,473 INFO api: 192.168.1.79 - - [15/Dec/2019 23:19:47] "GET /secretariats/1 HTTP/1.1" 200 -
+2019-12-15 23:19:50,279 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 23:19:50,282 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 23:19:50] "GET /8 HTTP/1.1" 200 -
+2019-12-15 23:19:50,283 DEBUG api: http://127.0.0.1:5000 "GET /8 HTTP/1.1" 200 69
+2019-12-15 23:19:50,284 INFO api: 192.168.1.79 - - [15/Dec/2019 23:19:50] "GET /secretariats/8 HTTP/1.1" 200 -
+2019-12-15 23:19:54,007 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 23:19:54,016 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 23:19:54] "PUT /8 HTTP/1.1" 200 -
+2019-12-15 23:19:54,017 DEBUG api: http://127.0.0.1:5000 "PUT /8 HTTP/1.1" 200 119
+2019-12-15 23:19:54,020 INFO api: 192.168.1.79 - - [15/Dec/2019 23:19:54] "PUT /secretariats/8 HTTP/1.1" 200 -
+2019-12-15 23:19:56,257 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 23:19:56,260 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 23:19:56] "GET / HTTP/1.1" 200 -
+2019-12-15 23:19:56,260 DEBUG api: http://127.0.0.1:5000 "GET / HTTP/1.1" 200 1455
+2019-12-15 23:19:56,262 INFO api: 192.168.1.79 - - [15/Dec/2019 23:19:56] "GET /secretariats HTTP/1.1" 200 -
+2019-12-15 23:20:09,064 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 23:20:09,071 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 23:20:09] "GET /8 HTTP/1.1" 200 -
+2019-12-15 23:20:09,073 DEBUG api: http://127.0.0.1:5000 "GET /8 HTTP/1.1" 200 119
+2019-12-15 23:20:09,076 INFO api: 192.168.1.79 - - [15/Dec/2019 23:20:09] "GET /secretariats/8 HTTP/1.1" 200 -
+2019-12-15 23:20:13,876 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 23:20:13,887 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 23:20:13] "PUT /8 HTTP/1.1" 200 -
+2019-12-15 23:20:13,888 DEBUG api: http://127.0.0.1:5000 "PUT /8 HTTP/1.1" 200 132
+2019-12-15 23:20:13,891 INFO api: 192.168.1.79 - - [15/Dec/2019 23:20:13] "PUT /secretariats/8 HTTP/1.1" 200 -
+2019-12-15 23:20:17,661 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 23:20:17,666 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 23:20:17] "GET / HTTP/1.1" 200 -
+2019-12-15 23:20:17,667 DEBUG api: http://127.0.0.1:5000 "GET / HTTP/1.1" 200 1468
+2019-12-15 23:20:17,669 INFO api: 192.168.1.79 - - [15/Dec/2019 23:20:17] "GET /secretariats HTTP/1.1" 200 -
+2019-12-15 23:20:25,244 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 23:20:25,252 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 23:20:25] "GET /1 HTTP/1.1" 200 -
+2019-12-15 23:20:25,254 DEBUG api: http://127.0.0.1:5000 "GET /1 HTTP/1.1" 200 125
+2019-12-15 23:20:25,259 INFO api: 192.168.1.79 - - [15/Dec/2019 23:20:25] "GET /secretariats/1 HTTP/1.1" 200 -
+2019-12-15 23:20:35,995 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 23:20:36,007 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 23:20:36] "PUT /1 HTTP/1.1" 200 -
+2019-12-15 23:20:36,009 DEBUG api: http://127.0.0.1:5000 "PUT /1 HTTP/1.1" 200 146
+2019-12-15 23:20:36,010 INFO api: 192.168.1.79 - - [15/Dec/2019 23:20:36] "PUT /secretariats/1 HTTP/1.1" 200 -
+2019-12-15 23:20:39,059 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 23:20:39,062 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 23:20:39] "GET / HTTP/1.1" 200 -
+2019-12-15 23:20:39,063 DEBUG api: http://127.0.0.1:5000 "GET / HTTP/1.1" 200 1489
+2019-12-15 23:20:39,064 INFO api: 192.168.1.79 - - [15/Dec/2019 23:20:39] "GET /secretariats HTTP/1.1" 200 -
+2019-12-15 23:20:40,611 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5000
+2019-12-15 23:20:40,617 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 23:20:40] "GET /1 HTTP/1.1" 200 -
+2019-12-15 23:20:40,619 DEBUG api: http://127.0.0.1:5000 "GET /1 HTTP/1.1" 200 146
+2019-12-15 23:20:40,623 INFO api: 192.168.1.79 - - [15/Dec/2019 23:20:40] "GET /secretariats/1 HTTP/1.1" 200 -
+2019-12-15 23:27:00,173 ERROR secretariats: Exception on /userAuth [GET]
+Traceback (most recent call last):
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File ".\secretariats.py", line 52, in get_sectreteriat
+    secretariat = list(filter(lambda secretariat: secretariat['id'] == int(id), secretariats))
+  File ".\secretariats.py", line 52, in <lambda>
+    secretariat = list(filter(lambda secretariat: secretariat['id'] == int(id), secretariats))
+ValueError: invalid literal for int() with base 10: 'userAuth'
+2019-12-15 23:27:00,176 INFO secretariats: 127.0.0.1 - - [15/Dec/2019 23:27:00] "GET /userAuth HTTP/1.1" 500 -
+2019-12-15 23:29:25,551 INFO secretariats:  * Running on http://127.0.0.1:5005/ (Press CTRL+C to quit)
+2019-12-15 23:29:30,299 INFO api:  * Running on http://0.0.0.0:5004/ (Press CTRL+C to quit)
+2019-12-16 12:04:46,838 INFO api: 192.168.1.79 - - [16/Dec/2019 12:04:46] "GET /favicon.ico HTTP/1.1" 200 -
+2019-12-16 13:04:54,595 INFO api: 127.0.0.1 - - [16/Dec/2019 13:04:54] "GET / HTTP/1.1" 404 -
+2019-12-16 13:05:40,432 INFO api: 127.0.0.1 - - [16/Dec/2019 13:05:40] "GET / HTTP/1.1" 404 -
+2019-12-16 13:05:41,479 INFO api: 127.0.0.1 - - [16/Dec/2019 13:05:41] "GET / HTTP/1.1" 404 -
+2019-12-16 13:05:41,687 INFO api: 127.0.0.1 - - [16/Dec/2019 13:05:41] "GET / HTTP/1.1" 404 -
+2019-12-16 13:05:41,827 INFO api: 127.0.0.1 - - [16/Dec/2019 13:05:41] "GET / HTTP/1.1" 404 -
+2019-12-16 20:36:35,826 INFO api:  * Running on http://0.0.0.0:5004/ (Press CTRL+C to quit)
+2019-12-16 20:37:06,814 INFO secretariats:  * Running on http://127.0.0.1:5005/ (Press CTRL+C to quit)
+2019-12-16 20:38:35,288 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5002
+2019-12-16 20:38:37,298 ERROR api: Exception on /canteen/2019/12/18 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\urllib3\connection.py", line 156, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\urllib3\util\connection.py", line 84, in create_connection
+    raise err
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\urllib3\util\connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\urllib3\connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\urllib3\connectionpool.py", line 387, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.449.0_x64__qbz5n2kfra8p0\lib\http\client.py", line 1230, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.449.0_x64__qbz5n2kfra8p0\lib\http\client.py", line 1276, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.449.0_x64__qbz5n2kfra8p0\lib\http\client.py", line 1225, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.449.0_x64__qbz5n2kfra8p0\lib\http\client.py", line 1004, in _send_output
+    self.send(msg)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.449.0_x64__qbz5n2kfra8p0\lib\http\client.py", line 944, in send
+    self.connect()
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\urllib3\connection.py", line 184, in connect
+    conn = self._new_conn()
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\urllib3\connection.py", line 168, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001C9948A7070>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\requests\adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\urllib3\connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\urllib3\util\retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=5002): Max retries exceeded with url: /2019/12/18 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C9948A7070>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File ".\api.py", line 28, in api
+    aux = requests.get(url).json()
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=5002): Max retries exceeded with url: /2019/12/18 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C9948A7070>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2019-12-16 20:38:37,555 INFO api: 127.0.0.1 - - [16/Dec/2019 20:38:37] "GET /canteen/2019/12/18 HTTP/1.1" 500 -
+2019-12-16 20:38:38,265 INFO api: 127.0.0.1 - - [16/Dec/2019 20:38:38] "GET /favicon.ico HTTP/1.1" 200 -
+2019-12-16 20:38:41,862 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5005
+2019-12-16 20:38:41,864 INFO secretariats: 127.0.0.1 - - [16/Dec/2019 20:38:41] "GET /0 HTTP/1.1" 200 -
+2019-12-16 20:38:41,865 DEBUG api: http://127.0.0.1:5005 "GET /0 HTTP/1.1" 200 3
+2019-12-16 20:38:41,867 INFO api: 127.0.0.1 - - [16/Dec/2019 20:38:41] "GET /secretariats/0 HTTP/1.1" 200 -
+2019-12-16 20:38:42,071 INFO api: 127.0.0.1 - - [16/Dec/2019 20:38:42] "GET /favicon.ico HTTP/1.1" 200 -
+2019-12-16 20:38:44,792 INFO api: 127.0.0.1 - - [16/Dec/2019 20:38:44] "GET /secretariats/ HTTP/1.1" 404 -
+2019-12-16 20:38:45,038 INFO api: 127.0.0.1 - - [16/Dec/2019 20:38:45] "GET /favicon.ico HTTP/1.1" 200 -
+2019-12-16 20:38:50,518 INFO api: 127.0.0.1 - - [16/Dec/2019 20:38:50] "GET / HTTP/1.1" 404 -
+2019-12-16 20:38:50,729 INFO api: 127.0.0.1 - - [16/Dec/2019 20:38:50] "GET /favicon.ico HTTP/1.1" 200 -
+2019-12-16 20:39:34,726 INFO api:  * Running on http://0.0.0.0:5004/ (Press CTRL+C to quit)
+2019-12-16 20:39:36,402 INFO api: 127.0.0.1 - - [16/Dec/2019 20:39:36] "GET / HTTP/1.1" 404 -
+2019-12-16 20:39:36,780 INFO api: 127.0.0.1 - - [16/Dec/2019 20:39:36] "GET /favicon.ico HTTP/1.1" 200 -
+2019-12-16 20:40:07,182 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5005
+2019-12-16 20:40:07,184 INFO secretariats: 127.0.0.1 - - [16/Dec/2019 20:40:07] "GET / HTTP/1.1" 200 -
+2019-12-16 20:40:07,185 DEBUG api: http://127.0.0.1:5005 "GET / HTTP/1.1" 200 1489
+2019-12-16 20:40:07,187 INFO api: 127.0.0.1 - - [16/Dec/2019 20:40:07] "GET /secretariats HTTP/1.1" 200 -
+2019-12-16 20:40:07,392 INFO api: 127.0.0.1 - - [16/Dec/2019 20:40:07] "GET /favicon.ico HTTP/1.1" 200 -
+2019-12-16 20:44:00,512 DEBUG api: Starting new HTTP connection (1): 127.0.0.1:5005
+2019-12-16 20:44:00,520 INFO secretariats: 127.0.0.1 - - [16/Dec/2019 20:44:00] "GET / HTTP/1.1" 200 -
+2019-12-16 20:44:00,524 DEBUG api: http://127.0.0.1:5005 "GET / HTTP/1.1" 200 1489
+2019-12-16 20:44:00,528 INFO api: 192.168.1.78 - - [16/Dec/2019 20:44:00] "GET /secretariats HTTP/1.1" 200 -
+2019-12-17 09:58:46,725 INFO user-webpages:  * Running on http://127.0.0.1:5005/ (Press CTRL+C to quit)
+2019-12-17 09:59:02,901 INFO user-webpages: 127.0.0.1 - - [17/Dec/2019 09:59:02] "GET / HTTP/1.1" 200 -
+2019-12-17 09:59:03,956 INFO user-webpages: 127.0.0.1 - - [17/Dec/2019 09:59:03] "GET /favicon.ico HTTP/1.1" 404 -
+2019-12-17 09:59:13,366 DEBUG user-webpages: Starting new HTTP connection (1): 127.0.0.1:5004
+2019-12-17 09:59:15,429 INFO user-webpages: 127.0.0.1 - - [17/Dec/2019 09:59:15] "GET /secretariats HTTP/1.1" 200 -
+2019-12-17 10:02:22,608 INFO admin-webpages:  * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)
+2019-12-17 10:02:28,747 INFO admin-webpages: 127.0.0.1 - - [17/Dec/2019 10:02:28] "GET / HTTP/1.1" 200 -
+2019-12-17 10:02:29,441 INFO admin-webpages: 127.0.0.1 - - [17/Dec/2019 10:02:29] "GET /favicon.ico HTTP/1.1" 404 -
+2019-12-17 10:02:36,385 DEBUG admin-webpages: Starting new HTTP connection (1): 192.168.1.81:5004
+2019-12-17 10:02:57,410 INFO admin-webpages: 127.0.0.1 - - [17/Dec/2019 10:02:57] "GET /secretariats HTTP/1.1" 200 -
+2019-12-17 10:03:04,993 INFO admin-webpages: 127.0.0.1 - - [17/Dec/2019 10:03:04] "GET / HTTP/1.1" 200 -
+2019-12-17 10:03:09,062 INFO admin-webpages:  * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)
+2019-12-17 10:03:10,831 INFO admin-webpages: 127.0.0.1 - - [17/Dec/2019 10:03:10] "GET / HTTP/1.1" 200 -
+2019-12-17 10:03:14,394 INFO admin-webpages: 127.0.0.1 - - [17/Dec/2019 10:03:14] "GET / HTTP/1.1" 200 -
+2019-12-17 10:03:17,157 INFO admin-webpages: 127.0.0.1 - - [17/Dec/2019 10:03:17] "GET /logging HTTP/1.1" 200 -
+2019-12-17 10:03:32,742 DEBUG admin-webpages: Starting new HTTP connection (1): 127.0.0.1:5004
+2019-12-17 10:03:34,766 INFO admin-webpages: 127.0.0.1 - - [17/Dec/2019 10:03:34] "GET /secretariats HTTP/1.1" 200 -
+2019-12-17 10:37:48,444 INFO api:  * Running on http://0.0.0.0:5004/ (Press CTRL+C to quit)
+2019-12-17 10:38:11,016 INFO secretariats:  * Running on http://127.0.0.1:5005/ (Press CTRL+C to quit)
+2019-12-17 12:27:52,760 INFO rooms:  * Running on http://127.0.0.1:5001/ (Press CTRL+C to quit)
+2019-12-17 12:27:56,746 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-17 12:27:56,927 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131363667 HTTP/1.1" 200 None
+2019-12-17 12:27:56,930 INFO rooms: 127.0.0.1 - - [17/Dec/2019 12:27:56] "GET /2448131363667 HTTP/1.1" 200 -
+2019-12-17 12:29:10,540 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-17 12:29:10,708 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131363667 HTTP/1.1" 200 None
+2019-12-17 12:29:10,711 INFO rooms: 127.0.0.1 - - [17/Dec/2019 12:29:10] "GET /2448131363667 HTTP/1.1" 200 -
+2019-12-17 12:29:14,943 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-17 12:29:15,110 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131363667 HTTP/1.1" 200 None
+2019-12-17 12:29:15,112 INFO rooms: 127.0.0.1 - - [17/Dec/2019 12:29:15] "GET /2448131363667 HTTP/1.1" 200 -
+2019-12-17 12:29:41,728 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-17 12:29:41,857 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131363667 HTTP/1.1" 200 None
+2019-12-17 12:29:41,859 INFO rooms: 127.0.0.1 - - [17/Dec/2019 12:29:41] "GET /2448131363667 HTTP/1.1" 200 -
+2019-12-17 12:32:34,128 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-17 12:32:34,296 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131363667 HTTP/1.1" 200 None
+2019-12-17 12:32:34,298 INFO rooms: 127.0.0.1 - - [17/Dec/2019 12:32:34] "GET /2448131363667 HTTP/1.1" 200 -
+2019-12-17 12:50:50,915 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-17 12:50:51,029 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131363667 HTTP/1.1" 200 None
+2019-12-17 12:50:51,042 INFO rooms: 127.0.0.1 - - [17/Dec/2019 12:50:51] "GET /2448131363667 HTTP/1.1" 200 -
+2019-12-18 10:23:33,587 INFO rooms:  * Running on http://127.0.0.1:5001/ (Press CTRL+C to quit)
+2019-12-18 10:23:54,579 INFO user-webpages:  * Running on http://127.0.0.1:5005/ (Press CTRL+C to quit)
+2019-12-18 10:24:25,312 INFO user-webpages: 127.0.0.1 - - [18/Dec/2019 10:24:25] "GET / HTTP/1.1" 200 -
+2019-12-18 10:24:25,850 INFO user-webpages: 127.0.0.1 - - [18/Dec/2019 10:24:25] "GET /favicon.ico HTTP/1.1" 404 -
+2019-12-18 10:24:30,785 DEBUG user-webpages: Starting new HTTP connection (1): 127.0.0.1:5004
+2019-12-18 10:24:30,843 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:24:31,208 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/1 HTTP/1.1" 404 53
+2019-12-18 10:24:31,221 ERROR rooms: Exception on /1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 2096, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2019-12-18 10:24:31,230 INFO rooms: 127.0.0.1 - - [18/Dec/2019 10:24:31] "GET /1 HTTP/1.1" 500 -
+2019-12-18 10:24:31,364 DEBUG user-webpages: http://127.0.0.1:5004 "GET /rooms/1 HTTP/1.1" 500 290
+2019-12-18 10:24:31,456 INFO user-webpages: 127.0.0.1 - - [18/Dec/2019 10:24:31] "POST /rooms HTTP/1.1" 200 -
+2019-12-18 10:24:40,193 DEBUG user-webpages: Starting new HTTP connection (1): 127.0.0.1:5004
+2019-12-18 10:24:40,205 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:24:40,388 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/12 HTTP/1.1" 404 53
+2019-12-18 10:24:40,401 ERROR rooms: Exception on /12 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Vasco\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 2096, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2019-12-18 10:24:40,405 INFO rooms: 127.0.0.1 - - [18/Dec/2019 10:24:40] "GET /12 HTTP/1.1" 500 -
+2019-12-18 10:24:40,479 DEBUG user-webpages: http://127.0.0.1:5004 "GET /rooms/12 HTTP/1.1" 500 290
+2019-12-18 10:24:40,484 INFO user-webpages: 127.0.0.1 - - [18/Dec/2019 10:24:40] "POST /rooms HTTP/1.1" 200 -
+2019-12-18 10:25:00,071 DEBUG user-webpages: Starting new HTTP connection (1): 127.0.0.1:5004
+2019-12-18 10:25:00,098 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:00,535 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131363667 HTTP/1.1" 200 None
+2019-12-18 10:25:00,606 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:00,816 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:00,840 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:01,052 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:01,075 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:01,282 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:01,306 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:01,506 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:01,529 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:01,723 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:01,747 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:01,946 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:01,970 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:02,182 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:02,205 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:02,431 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:02,453 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:02,652 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:02,674 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:02,888 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:02,911 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:03,118 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:03,141 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:03,356 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:03,378 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:03,569 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:03,585 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:03,783 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:03,807 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:04,018 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:04,042 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:04,257 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:04,279 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:04,481 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:04,504 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:04,705 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:04,729 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:04,934 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:04,954 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:05,156 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:05,179 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:05,384 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:05,396 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:05,587 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:05,610 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:05,818 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:05,842 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:06,054 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:06,078 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:06,330 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:06,352 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:06,546 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:06,569 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:06,784 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:06,806 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:07,025 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:07,049 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:07,244 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:07,267 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:07,472 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:07,494 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:07,705 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:07,729 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:07,905 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:07,927 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:08,124 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:08,147 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:08,401 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:08,425 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:08,641 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:08,665 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:08,879 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:08,903 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:09,114 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:09,137 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:09,354 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:09,376 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:09,572 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:09,594 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:09,731 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:09,761 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:09,991 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:10,012 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:10,220 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:10,244 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:10,457 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:10,481 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:10,687 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:10,695 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:10,877 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:10,881 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:10,999 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:11,013 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:11,205 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:11,224 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:11,444 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:11,470 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:11,681 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:11,706 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:11,949 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:11,971 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:12,195 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:12,219 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:12,447 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:12,474 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:12,706 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:12,734 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:12,966 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:12,991 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:13,205 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:13,228 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:13,434 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:13,456 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:13,661 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:13,684 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:13,904 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:13,928 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:14,138 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:14,162 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:14,370 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:14,393 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:14,570 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:14,593 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:14,792 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:14,801 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:14,949 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:14,967 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:15,133 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:15,151 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:15,323 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:15,342 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:15,529 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:15,545 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:15,754 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:15,778 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:15,983 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:16,007 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:16,204 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:16,216 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:16,435 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:16,460 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:16,662 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:16,684 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:16,889 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:16,914 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:17,114 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:17,137 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:17,344 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:17,367 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:17,587 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:17,610 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:17,825 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:17,850 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:18,047 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:18,069 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:18,281 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:18,305 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:18,512 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:18,534 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:18,729 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:18,751 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:18,949 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:18,972 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:19,179 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:19,204 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:19,399 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:19,412 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:19,551 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:19,570 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:19,740 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:19,763 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:19,972 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:19,978 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:20,113 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:20,138 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:20,354 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:20,378 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:20,607 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:20,632 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:20,831 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:20,855 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:21,059 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:21,081 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:21,270 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:21,293 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:21,397 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:21,407 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:21,532 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:21,537 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:21,641 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:21,655 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:21,843 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:21,866 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:22,101 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:22,129 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:22,358 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:22,385 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:22,606 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:22,635 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:22,848 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:22,876 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:23,095 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:23,118 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:23,331 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:23,353 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:23,574 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:23,596 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:23,800 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:23,825 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:23,959 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:23,966 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:24,083 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:24,089 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:24,223 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:24,230 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:24,364 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:24,390 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:24,606 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:24,636 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:24,850 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:24,874 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:25,091 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:25,114 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:25,313 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:25,335 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:25,557 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:25,604 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:25,802 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:25,827 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:26,029 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:26,051 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:26,252 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:26,263 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:26,440 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:26,463 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:26,674 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:26,696 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:26,913 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:26,937 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:27,137 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:27,143 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:27,272 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:27,280 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:27,433 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:27,456 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:27,676 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:27,699 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:27,945 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:27,968 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:28,197 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:28,222 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:28,442 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:28,449 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:28,566 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:28,571 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:28,685 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:28,690 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:28,799 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:28,803 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:28,919 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:28,923 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:29,048 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:29,052 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:29,167 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:29,171 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:29,268 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:29,272 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:29,393 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:29,416 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:29,576 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:29,583 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:29,693 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:29,701 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:29,818 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:29,822 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:29,935 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:29,940 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:30,055 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:30,059 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:30,164 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:30,168 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:30,281 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:30,287 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:30,411 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:30,415 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:30,532 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:30,537 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:30,652 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:30,656 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:30,774 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:30,778 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:30,896 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:30,901 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:31,010 DEBUG rooms: https://fenix.tecnico.ulisboa.pt:443 "GET /api/fenix/v1/spaces/2448131361135 HTTP/1.1" 200 None
+2019-12-18 10:25:31,035 DEBUG rooms: Starting new HTTPS connection (1): fenix.tecnico.ulisboa.pt:443
+2019-12-18 10:25:31,391 DEBUG user-webpages: http://127.0.0.1:5004 "GET /rooms/2448131363667 HTTP/1.1" 500 290
+2019-12-18 10:25:31,392 INFO user-webpages: 127.0.0.1 - - [18/Dec/2019 10:25:31] "POST /rooms HTTP/1.1" 200 -
+2019-12-18 10:25:40,003 DEBUG user-webpages: Starting new HTTP connection (1): 127.0.0.1:5004
+2019-12-18 10:26:10,721 DEBUG user-webpages: http://127.0.0.1:5004 "GET /rooms/2448131363667 HTTP/1.1" 500 290
+2019-12-18 10:26:10,723 INFO user-webpages: 127.0.0.1 - - [18/Dec/2019 10:26:10] "POST /rooms HTTP/1.1" 200 -
+2019-12-18 10:26:15,023 DEBUG user-webpages: Starting new HTTP connection (1): 127.0.0.1:5004
+2019-12-18 10:26:21,199 DEBUG user-webpages: http://127.0.0.1:5004 "GET /rooms/2448131363667 HTTP/1.1" 500 290
+2019-12-18 10:26:21,200 INFO user-webpages: 127.0.0.1 - - [18/Dec/2019 10:26:21] "POST /rooms HTTP/1.1" 200 -
+2019-12-18 10:26:42,828 DEBUG user-webpages: Starting new HTTP connection (1): 127.0.0.1:5004
+2019-12-18 10:26:55,214 DEBUG user-webpages: http://127.0.0.1:5004 "GET /rooms/2448131363667 HTTP/1.1" 500 290
+2019-12-18 10:26:55,216 INFO user-webpages: 127.0.0.1 - - [18/Dec/2019 10:26:55] "POST /rooms HTTP/1.1" 200 -
+2019-12-18 10:27:46,798 DEBUG user-webpages: Starting new HTTP connection (1): 127.0.0.1:5004
+2019-12-18 10:27:47,645 DEBUG user-webpages: http://127.0.0.1:5004 "GET /rooms/2448131363667 HTTP/1.1" 200 10473
+2019-12-18 10:27:47,793 INFO user-webpages: 127.0.0.1 - - [18/Dec/2019 10:27:47] "POST /rooms HTTP/1.1" 200 -
