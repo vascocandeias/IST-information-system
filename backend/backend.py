@@ -40,7 +40,7 @@ app.config['SECRET_KEY'] = 'Thisissupposedtobesecret!'
 bootstrap = Bootstrap(app)
 login_manager = LoginManager()
 login_manager.init_app(app)
-login_manager.login_view = '/amdin/login'
+login_manager.login_view = '/admin/login'
 SECRETARIAT_URL = APIURL + "/secretariats"
 # to use API POST, PUT and DELETE, comment line below
 SECRETARIAT_URL = services["secretariats"]
@@ -59,6 +59,11 @@ def before():
         "payload": str(request.values.to_dict(flat=True)),
         }
     requests.post(URL_LOG, data = data)
+
+######################################## Non existing links ######################################
+@app.route('/<path:subpath>')
+def home_page(subpath=''):
+    return render_template("errorPage.html", error="How did you get here?")
 
 ########################################### Mobile app ########################################### 
 @app.route('/mobile', methods = ["GET", "POST"])
@@ -103,7 +108,7 @@ def userAuthenticated():
         response.set_cookie('token', secret)
         return response
     else:
-        return 'oops 1'
+        return render_template("errorPage.html", error="Not possible to login")
 
 
 @app.route('/mobile/camera', methods=["GET", "POST"])
@@ -134,7 +139,7 @@ def id():
         }
         return render_template("secret.html", user=user)
     else:
-        return "oops"
+        return render_template("errorPage.html", error="Not possible to get information")
 
 @app.route('/mobile/requests/<secret>')
 def ping(secret):
@@ -426,17 +431,19 @@ def web_secretariat(id):
     try:
         send_url = APIURL + '/secretariats/' + id
         data = requests.get(url=send_url).json()
+        if data == {}:
+            return render_template("errorPage.html", error="Secretariat not found")
         return render_template("secretariatPageWeb.html", info=data)
     except Exception as e:
         return render_template("errorPage.html", error=str(e))
 
-@app.route('/web/canteen', methods=['POST'])
+@app.route('/web/canteen', methods=['GET'])
 def get_canteen_list():
-    dt = datetime.strptime(request.form["day"], '%Y-%m-%d')
+    dt = datetime.strptime(request.values.get("day"), '%Y-%m-%d')
     try:
         url_send = APIURL + '/canteen/' + str(dt.year) + '/' + str(dt.month) + '/' + str(dt.day)
         data = requests.get(url=url_send).json()
-        return render_template("canteenPage.html", day=request.form["day"] , meal=data)
+        return render_template("canteenPage.html", day=request.values["day"] , meal=data)
     except Exception as e:
         return render_template("errorPage.html", error=str(e))
 
@@ -449,6 +456,8 @@ def rooms_page():
         try:
             url_send = APIURL + '/rooms/' + str(value)
             d = requests.get(url=url_send).json()
+            if d == {}:
+                return render_template("errorPage.html", error="Room not found")
             return render_template("roomPage.html", id=request.values["id"], data=d)
         except Exception as e:
             return render_template("errorPage.html", error=str(e))

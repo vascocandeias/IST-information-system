@@ -5,6 +5,10 @@ import requests
 PORT = 5006
 app = Flask(__name__)
 
+@app.route('/<path:subpath>')
+def home_page(subpath=''):
+    return {}
+
 @app.route('/', methods=["POST", "GET"])
 def add_logs():
     if request.method == "POST":

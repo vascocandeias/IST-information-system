@@ -24,13 +24,10 @@ def before():
         }
     requests.post(URL_LOG, data = data)
 
-#TODO: Meter retornos 404 bem
-
-
 @app.route('/')
-def home_page():
-    #TODO: adicionar form para meter data?
-    return 'Canteen'
+@app.route('/<path:subpath>')
+def error_page(subpath=''):
+    return {}
 
 @app.route('/<year>/<month>/<day>')
 def get_canteen(year, month, day):

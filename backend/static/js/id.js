@@ -27,7 +27,7 @@ function callback(secret) {
         clearInterval(ping);
         document.getElementById("secret").innerHTML = "";
         document.getElementById("d1").innerHTML = `
-            Your identification was requested by: <br>
+            Your identification was requested by: <br><br>
             <img src="data:${data.photo.type};base64, ${data.photo.data}" alt="Student Photo"> <br> 
             Name: ${data.name} <br>
             IST-id: ${data.istid} <br><br>  

@@ -7,8 +7,6 @@ import pickle
 
 URL_LOG = "http://127.0.0.1:5006"
 
-#TODO: Meter retornos 404 bem
-
 app = Flask(__name__)
 filename = 'secretariats.pickle'
 PORT = 5005
@@ -24,6 +22,10 @@ def before():
         "payload": str(request.values.to_dict(flat=True)),
         }
     requests.post(URL_LOG, data = data)
+
+@app.route('/<path:subpath>')
+def error_page(subpath=''):
+    return {}
 
 @app.route('/', methods=['GET','POST'])
 def home_page():

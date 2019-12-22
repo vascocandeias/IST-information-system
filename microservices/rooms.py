@@ -27,9 +27,9 @@ def before():
     requests.post(URL_LOG, data = data)
 
 @app.route('/')
-def home_page():
-    #TODO: adicionar form para meter id?
-    return 'Rooms'
+@app.route('/<path:subpath>')
+def error_page(subpath=''):
+    return {}
 
 @app.route('/<id>')
 def get_room(id):
