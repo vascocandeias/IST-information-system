@@ -52,7 +52,7 @@ function compareDates(a ,b) {
     var aDate = new Date(+dateParts[2], dateParts[1] - 1, +dateParts[0]); 
     dateParts = b.day.split("/");
     var bDate = new Date(+dateParts[2], dateParts[1] - 1, +dateParts[0]);
-
+    
     if(aDate - bDate != 0) return aDate - bDate;
     dateParts = a.start.split(":");
     var aHours = dateParts[0];
@@ -94,15 +94,16 @@ function generics(events) {
 function hasTests(room) {
     for (const event of room.events) {
         if (event.type == "TEST") {
-           return true;
+            return true;
         }
     }
     return false;
+}
 
 function hasGeneric(room) {
     for (const event of room.events) {
         if (event.type == "GENERIC") {
-           return true;
+            return true;
         }
     }
     return false;
@@ -111,7 +112,7 @@ function hasGeneric(room) {
 function hasLessons(room){
     for (const event of room.events) {
         if (event.type == "LESSON") {
-           return true;
+            return true;
         }
     }
     return false;
@@ -119,7 +120,7 @@ function hasLessons(room){
 
 function roomTemplate(room) {
     return `
-    <h1>Rooms</h1>
+    <h1>Room</h1>
     <p>ID: ${room.id}</p>
     <p>Name and Location: ${room.name}, ${room.building}, ${room.topLevelSpace.name}</p>
     ${hasLessons(room) ? lessons(room.events) : ""}
@@ -134,11 +135,11 @@ let scanner = new Instascan.Scanner({ video: document.getElementById('preview'),
 scanner.addListener('scan', function (content) {
     jQuery.getJSON(content, function(data, status){
         if (data.type == "ROOM")
-            document.getElementById("divDestiny").innerHTML = `${roomTemplate(data)}`;
+        document.getElementById("divDestiny").innerHTML = `${roomTemplate(data)}`;
         else if (data.type == "SECRETARIAT")
-            document.getElementById("divDestiny").innerHTML = `${secretariatTemplate(data)}`;
+        document.getElementById("divDestiny").innerHTML = `${secretariatTemplate(data)}`;
         else
-            document.getElementById("divDestiny").innerHTML = `<h1>Unknown Type</h1><br><pre>${JSON.stringify(data, null, 2)}</pre>`;
+        document.getElementById("divDestiny").innerHTML = `<h1>Unknown Type</h1><br><pre>${JSON.stringify(data, null, 2)}</pre>`;
         console.log(data.type)
     });
 });

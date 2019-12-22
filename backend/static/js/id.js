@@ -3,7 +3,13 @@ document.getElementById('getSecretBtn').onclick = function () {
         document.getElementById("secret").innerHTML = data.secret;
         clearInterval(ping);
         ping = setInterval(callback, 500, data.secret);
-    }, 'json')
+    }, 'json').fail(function(event) {
+        if (event.status == 401) {
+            alert("You have been logged out");
+            clearInterval(ping);
+            window.location.replace("https://id.tecnico.ulisboa.pt/cas/logout");
+        }
+    })
 };
 
 document.getElementById('Submit').onclick = function () {
@@ -37,6 +43,10 @@ function callback(secret) {
             clearInterval(ping);
             document.getElementById("secret").innerHTML = "";
             document.getElementById("d1").innerHTML = "Your secret is no longer valid, request a new one";
+        } else if (event.status == 401) {
+            alert("You have been logged out");
+            clearInterval(ping);
+            window.location.replace("https://id.tecnico.ulisboa.pt/cas/logout");
         }
     })
 

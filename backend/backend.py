@@ -5,7 +5,7 @@ from wtforms import StringField, PasswordField, BooleanField
 from wtforms.validators import InputRequired, Email, Length
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
-from datetime import datetime
+from datetime import datetime, timedelta
 import secrets
 import logging
 import requests
@@ -105,7 +105,7 @@ def userAuthenticated():
 
         #now the user has done the login
         response = make_response(redirect('/mobile'))
-        response.set_cookie('token', secret)
+        response.set_cookie('token', secret, expires=datetime.now() + timedelta(hours=1))
         return response
     else:
         return render_template("errorPage.html", error="Not possible to login")
@@ -144,8 +144,9 @@ def id():
 @app.route('/mobile/requests/<secret>')
 def ping(secret):
     if tokensDict.get(request.cookies.get("token")) == None:
-        redPage = fenixLoginpage % (client_id, redirect_uri)
-        return redirect(redPage)
+        response = make_response()
+        response.set_cookie('token', '', expires=0)
+        return response, 401
     try:
         global requestsDict
         userToken = requestsDict.pop(secret)
@@ -170,8 +171,10 @@ def ping(secret):
 @app.route('/mobile/secret', methods=["POST", "GET"])
 def getSecret():
     if tokensDict.get(request.cookies.get("token")) == None:
-        redPage = fenixLoginpage % (client_id, redirect_uri)
-        return redirect(redPage)
+        response = make_response()
+        response.set_cookie('token', '', expires=0)
+        return response, 401
+
 
     global secretsDict
     if request.method == "POST":
@@ -346,17 +349,8 @@ def signup():
 def show_logs():
     l = []
     resp = requests.get(LOG_URL)
-    # data = resp.text.replace('\t', '<br>')
     data = resp.text.split('\t')
     return render_template("logsPage.html", lines=data, name=current_user.username)
-    try:
-        f = open("../log.txt", "r")
-        l = f.readlines()
-        f.close()
-        return render_template("logsPage.html", lines=l, name=current_user.username)
-    except Exception as e:
-        return render_template("errorPage.html", error=str(e))
-
 
 @app.route('/web/admin/secretariats', methods=["GET", "POST"])
 @login_required
