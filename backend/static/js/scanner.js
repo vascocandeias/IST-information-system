@@ -65,6 +65,7 @@ function compareDates(a ,b) {
 }
 
 function lessons(events) {
+    date = nulll;
     return `
     <h3>Lessons</h3>
     <ul>
@@ -74,6 +75,7 @@ function lessons(events) {
 }
 
 function tests(events) {
+    date = null;
     return `
     <h3>Tests</h3>
     <ul>
@@ -82,7 +84,18 @@ function tests(events) {
     `;
 }
 
+function exams(events) {
+    date = null;
+    return `
+    <h3>Exams</h3>
+    <ul>
+    ${events.filter(event => event.type == "EXAM").sort(compareDates).map(printTest).join("<br>")}
+    </ul>
+    `;
+}
+
 function generics(events) {
+    date = null;
     return `
     <h3>Generics</h3>
     <ul>
@@ -90,7 +103,14 @@ function generics(events) {
     </ul>
     `;
 }
-
+function hasExams(room) {
+    for (const event of room.events) {
+        if (event.type == "EXAM") {
+            return true;
+        }
+    }
+    return false;
+}
 function hasTests(room) {
     for (const event of room.events) {
         if (event.type == "TEST") {
@@ -125,6 +145,7 @@ function roomTemplate(room) {
     <p>Name and Location: ${room.name}, ${room.building}, ${room.topLevelSpace.name}</p>
     ${hasLessons(room) ? lessons(room.events) : ""}
     ${hasTests(room) ? tests(room.events) : ""}
+    ${hasExams(room) ? exams(room.events) : ""}
     ${hasGeneric(room) ? generics(room.events) : ""}
     `;
 } 
@@ -140,7 +161,7 @@ scanner.addListener('scan', function (content) {
         document.getElementById("divDestiny").innerHTML = `${secretariatTemplate(data)}`;
         else
         document.getElementById("divDestiny").innerHTML = `<h1>Unknown Type</h1><br><pre>${JSON.stringify(data, null, 2)}</pre>`;
-        console.log(data.type)
+        console.log(data);
     });
 });
 

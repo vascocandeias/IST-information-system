@@ -24,8 +24,8 @@
     <li> {{ item.title }}</li>
     {% elif item.type == "LESSON" %}
     <li> {{ item.course.acronym }}  - {{ item.info }} - {{ item.course.name }}</li>
-    {% elif item.type == "TEST" %}
-    <li> {{ item.description }}:
+    {% elif (item.type == "TEST" or item.type == "EXAM") %}
+    <li> {{ item.description if item.type == "TEST" else "Exam" }}:
         <ul>
         {% for i in item.courses %}
             <li>{{ i.acronym }}, {{ i.name }}</li>

@@ -25,6 +25,10 @@ services = {
     'secretariats': 'http://127.0.0.1:5005'
 }
 
+mainpages = {
+    "Secretariats": "http://127.0.0.1:5000/web/secretariats"
+}
+
 ################# Authentication variables 
 redirect_uri = "http://127.0.0.1:5000/userAuth" # this is the address of the page on this app 
 client_id= "570015174623374" # copy value from the app registration
@@ -174,7 +178,6 @@ def getSecret():
         response = make_response()
         response.set_cookie('token', '', expires=0)
         return response, 401
-
 
     global secretsDict
     if request.method == "POST":
@@ -347,7 +350,6 @@ def signup():
 @app.route('/web/admin/logging')
 @login_required
 def show_logs():
-    l = []
     resp = requests.get(LOG_URL)
     data = resp.text.split('\t')
     return render_template("logsPage.html", lines=data, name=current_user.username)
@@ -409,7 +411,7 @@ def logout():
 ############################################ Webpages ############################################
 @app.route('/web')
 def hello_world():
-    return render_template("mainPageWeb.html")
+    return render_template("mainPageWeb.html", mainpages=mainpages)
 
 @app.route('/web/secretariats')
 def web_secretariat_list_page():

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- nao precisa de receber nada -->
+<!-- mainpages -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,8 +10,9 @@
 
 <p>Search information about:</p>
 <ul>
-
-    <li><a href="/web/secretariats">Secretariats</a></li>
+    {% for name, url in mainpages.items() %}
+    <li><a href={{url}}>{{name}}</a></li>
+    {% endfor %}
     <li>Canteen: <form action="/web/canteen" method= "get">
         date: <input type="date" name="day" required>
         <input type="submit">
@@ -26,4 +27,5 @@
 
 
 </body>
+</html>
 </html>
